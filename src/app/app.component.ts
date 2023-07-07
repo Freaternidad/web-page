@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { LANGUAGES } from './core/constants/languages';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'page';
+  title = 'Fraternidad';
+
+  constructor(translate: TranslateService) {
+    translate.setDefaultLang(LANGUAGES.es);
+    translate.use(LANGUAGES.es);
+  }
 }
