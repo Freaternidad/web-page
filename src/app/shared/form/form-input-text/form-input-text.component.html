@@ -1,0 +1,28 @@
+<ef-form-wrap-input [isInvalid]="isInvalid" [isFocus]="isFocus" [isFilled]="isFilled" (click)="handleFocus()">
+    <ng-container field>
+        <input 
+            [class.invalid]="isInvalid"
+            [class.typing]="isFocus && isFilled && !isInvalid"
+            [class.filled]="!isFocus && isFilled && !isInvalid"
+            [type]="type || 'text'"
+            [value]="currentValue"
+            [placeholder]="placeholder"
+            [autocomplete]="autocomplete"
+            [readonly]="readonly"
+            [attr.min]="min"
+            [attr.max]="max"
+            [attr.maxlength]="maxlength"
+            [attr.minlength]="minlength"
+            (input)="handleChange($event)"
+            (focus)="handleFocus()"
+            (blur)="handleBlur()"
+            #inputText
+        >
+    </ng-container>
+    <ng-container label><ng-content select="[label]"></ng-content></ng-container>
+    <ng-container icon><ng-content select="[icon]"></ng-content></ng-container>
+    <ng-container errors><ng-content select="[errors]"></ng-content></ng-container>
+    <ng-container warnings><ng-content select="[warnings]"></ng-content></ng-container>
+    <ng-container success><ng-content select="[success]"></ng-content></ng-container>
+
+</ef-form-wrap-input>

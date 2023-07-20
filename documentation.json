@@ -1,0 +1,3028 @@
+{
+    "pipes": [
+        {
+            "name": "IsInvalidPipe",
+            "id": "pipe-IsInvalidPipe-0c160fbd5873bbd9a7e496f5e527ba3bba36a0181e503ee4db360e8322437589f701212cd9a6de5f80f761c3ff8e25b9624bf0165a2de2c5c0ee1219463f29fe",
+            "file": "src/app/core/pipes/is-invalid.pipe.ts",
+            "type": "pipe",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "transform",
+                    "args": [
+                        {
+                            "name": "control",
+                            "type": "AbstractControl",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "keys",
+                            "type": "string[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "dotDotDotToken": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "control",
+                            "type": "AbstractControl",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "keys",
+                            "type": "string[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "dotDotDotToken": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "standalone": true,
+            "pure": false,
+            "ngname": "isInvalid",
+            "sourceCode": "import { Pipe, PipeTransform } from '@angular/core';\nimport { AbstractControl } from '@angular/forms';\n\n@Pipe({\n  name: 'isInvalid',\n  standalone: true,\n  pure: false\n})\nexport class IsInvalidPipe implements PipeTransform {\n\n  transform(control: AbstractControl, ...keys: string[]): boolean {\n    return control?.touched && !!control?.errors;\n  }\n\n}\n"
+        }
+    ],
+    "interfaces": [
+        {
+            "name": "CanChangeColor",
+            "id": "interface-CanChangeColor-f1b276dece9dbd0e57d013e50b1e9090491d0debfd4084c3a909d313b2f438a7e67dc2fa850e9bfc1ec794e01515ebc5b1169bb57d9e73b13a1330b385ad7ad0",
+            "file": "src/app/core/constants/colors.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export type EFThemePalette =  'primary' | 'secondary' | 'tertiary';\r\n\r\nexport interface CanChangeColor {\r\n    color: EFThemePalette;\r\n}\r\n\r\n",
+            "properties": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "EFThemePalette",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 168,
+            "methods": []
+        },
+        {
+            "name": "CanChangeSize",
+            "id": "interface-CanChangeSize-2b43042f84add3347aabcb03c9c29601cc2ea95989d0da6bd2c6791f24e70de354cac648677d545c1a81fafbd2fca7217af4009f62154a2f1fa0b7459e95df25",
+            "file": "src/app/core/constants/sizes.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export type EFSize = 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';\r\n\r\nexport interface CanChangeSize {\r\n    size: EFSize;\r\n}",
+            "properties": [
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "EFSize",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 168,
+            "methods": []
+        },
+        {
+            "name": "SelectOptionModel",
+            "id": "interface-SelectOptionModel-6945a4c4411629f81c4771230ec32a76e4794cb73a9c6419796ffef8112537a6a1e2d99befcca7fee6f3a18c9a50523a8149cefc1e6505d19b2fe187435cd1d2",
+            "file": "src/app/core/models/select-option.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface SelectOptionModel {\r\n    \r\n    id: string;\r\n    label: string;\r\n    _id?: string;\r\n}",
+            "properties": [
+                {
+                    "name": "_id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 168,
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "src/stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [
+        {
+            "name": "ColorDirective",
+            "id": "directive-ColorDirective-f688e754358e9ee48d9c8043dbe142f4d798cb72b918c0fca90704654cafa202f99796699e99780e8297d666dfb69a9a92b7939e9e7b297ed670f449ab343073",
+            "file": "src/app/core/directives/color.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive, ElementRef, Input} from '@angular/core';\nimport { CanChangeColor, EFThemePalette } from '../constants/colors';\n\n@Directive({\n  selector: '[EFColor]',\n  standalone: true\n})\nexport class ColorDirective implements CanChangeColor {\n  private _color!: EFThemePalette;\n\n  @Input('EFColor')\n  set color(value: EFThemePalette) {\n    this.setClassColor(value);\n    this._color = value;\n  } \n  get color(): EFThemePalette {\n    return this._color;\n  }\n\n  constructor(\n    private _elementRef: ElementRef<HTMLElement>,\n  ) { }\n\n  private setClassColor(color: EFThemePalette): void {\n    const classList = this._elementRef.nativeElement.classList;\n    const element = this._elementRef.nativeElement.tagName?.toLocaleLowerCase();\n    classList.remove(`${element}-${this._color}`);\n    if (color) {\n      classList.add(`${element}-${color}`);\n    } \n  }\n\n}\n",
+            "selector": "[EFColor]",
+            "providers": [],
+            "hostDirectives": [],
+            "standalone": true,
+            "inputsClass": [
+                {
+                    "name": "EFColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "EFThemePalette",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [
+                {
+                    "name": "_color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "EFThemePalette",
+                    "optional": false,
+                    "description": "",
+                    "line": 9,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "setClassColor",
+                    "args": [
+                        {
+                            "name": "color",
+                            "type": "EFThemePalette",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "color",
+                            "type": "EFThemePalette",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "implements": [
+                "CanChangeColor"
+            ],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "_elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 18,
+                "jsdoctags": [
+                    {
+                        "name": "_elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "accessors": {
+                "color": {
+                    "name": "color",
+                    "setSignature": {
+                        "name": "color",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "EFThemePalette",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 12,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "EFThemePalette",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "color",
+                        "type": "",
+                        "returnType": "EFThemePalette",
+                        "line": 16
+                    }
+                }
+            }
+        },
+        {
+            "name": "IconButtonDirective",
+            "id": "directive-IconButtonDirective-9604b9a4e0b10b054bab41934c357854f680abea69396493a076d998e7e0267300818c4b3b3a3b6bf8960b532b8a29af3b13458da4d1b3b3d53bc3fca67980d9",
+            "file": "src/app/core/directives/icon-button.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive, ElementRef, Input} from '@angular/core';\n\n@Directive({\n  selector: '[EFIconButton]',\n  standalone: true\n})\nexport class IconButtonDirective {\n  private _filled!: boolean;\n\n  @Input()\n  set filled(value: boolean) {\n    this.setClassFilled(value);\n    this._filled = value;\n  } \n  get filled(): boolean {\n    return this._filled;\n  }\n\n  constructor(\n    private _elementRef: ElementRef<HTMLElement>,\n  ) { \n    this._elementRef.nativeElement.classList.add('ef-icon-button');\n  }\n\n  private setClassFilled(filled: boolean): void {\n    const classList = this._elementRef.nativeElement.classList;\n    const element = this._elementRef.nativeElement.tagName?.toLocaleLowerCase();\n    classList.remove(`${element}-filled`);\n    if (filled) {\n      classList.add(`${element}-filled`);\n    } \n  }\n\n}\n",
+            "selector": "[EFIconButton]",
+            "providers": [],
+            "hostDirectives": [],
+            "standalone": true,
+            "inputsClass": [
+                {
+                    "name": "filled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [
+                {
+                    "name": "_filled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 8,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "setClassFilled",
+                    "args": [
+                        {
+                            "name": "filled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "filled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "_elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 17,
+                "jsdoctags": [
+                    {
+                        "name": "_elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "accessors": {
+                "filled": {
+                    "name": "filled",
+                    "setSignature": {
+                        "name": "filled",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "boolean",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 11,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "boolean",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "filled",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 15
+                    }
+                }
+            }
+        },
+        {
+            "name": "LinkButtonDirective",
+            "id": "directive-LinkButtonDirective-a42d38f8df7d3de7b552aabe41255baf57d4c243745f2527b9c399002242c5fc73e4739d28b0a2d9bd2b8c342ef05eff13b995ee769ad6ac851d2280b4861f7c",
+            "file": "src/app/core/directives/link-button.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive, ElementRef } from '@angular/core';\n\n@Directive({\n  selector: '[EFLinkButton]',\n  standalone: true\n})\nexport class LinkButtonDirective {\n\n  constructor(\n    private _elementRef: ElementRef<HTMLElement>,\n  ) { \n    this._elementRef.nativeElement.classList.add('ef-link-button');\n  }\n\n}\n",
+            "selector": "[EFLinkButton]",
+            "providers": [],
+            "hostDirectives": [],
+            "standalone": true,
+            "inputsClass": [],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "_elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 7,
+                "jsdoctags": [
+                    {
+                        "name": "_elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "SizeDirective",
+            "id": "directive-SizeDirective-5391c1059d7843c8179b5f04a9b294a8dfa661627cd920b2591d60618679f34d3ea7fbdcce9c2529e49486d125901dfcd329e428d979095fb78ee9060a49b521",
+            "file": "src/app/core/directives/size.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive, ElementRef, Input } from '@angular/core';\nimport { CanChangeSize, EFSize } from '../constants/sizes';\n\n@Directive({\n  selector: '[EFSize]',\n  standalone: true\n})\nexport class SizeDirective implements CanChangeSize {\n  private _size!: EFSize;\n\n  @Input('EFSize')\n  set size(value: EFSize) {\n    this.setClassSize(value);\n    this._size = value;\n  } \n  get size(): EFSize {\n    return this._size;\n  }\n\n  constructor(\n    private _elementRef: ElementRef<HTMLElement>,\n  ) { }\n\n  private setClassSize(size: EFSize): void {\n    const classList = this._elementRef.nativeElement.classList;\n    const element = this._elementRef.nativeElement.tagName?.toLocaleLowerCase();\n    classList.remove(`${element}-${size}`);\n    if (size) {\n      classList.add(`${element}-${size}`);\n    }\n  }\n\n}\n",
+            "selector": "[EFSize]",
+            "providers": [],
+            "hostDirectives": [],
+            "standalone": true,
+            "inputsClass": [
+                {
+                    "name": "EFSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "EFSize",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [
+                {
+                    "name": "_size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "EFSize",
+                    "optional": false,
+                    "description": "",
+                    "line": 9,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "setClassSize",
+                    "args": [
+                        {
+                            "name": "size",
+                            "type": "EFSize",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "size",
+                            "type": "EFSize",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "implements": [
+                "CanChangeSize"
+            ],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "_elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 18,
+                "jsdoctags": [
+                    {
+                        "name": "_elementRef",
+                        "type": "ElementRef<HTMLElement>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "accessors": {
+                "size": {
+                    "name": "size",
+                    "setSignature": {
+                        "name": "size",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "EFSize",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 12,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "EFSize",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "size",
+                        "type": "",
+                        "returnType": "EFSize",
+                        "line": 16
+                    }
+                }
+            }
+        }
+    ],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-d4102252270152f89118d299ca0129302c247ad857edbdb6a0503f3f8d65e7528970b5dbf0ca631731f267dffe388b11866395a27f073dacde1a58ed2bf425cf",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "inputValue",
+                    "defaultValue": "new FormControl(null, Validators.required)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "FormControl",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "'Fraternidad'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { TranslateService } from '@ngx-translate/core';\nimport { LANGUAGES } from './core/constants/languages';\nimport { FormControl, Validators } from '@angular/forms';\n\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'Fraternidad';\n  inputValue: FormControl = new FormControl(null, Validators.required);\n\n  constructor(translate: TranslateService) {\n    translate.setDefaultLang(LANGUAGES.es);\n    translate.use(LANGUAGES.es);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "translate",
+                        "type": "TranslateService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 14,
+                "jsdoctags": [
+                    {
+                        "name": "translate",
+                        "type": "TranslateService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<ef-button [EFColor]=\"'primary'\" [EFSize]=\"'medium'\" >\n    My button\n</ef-button>\n<ef-form-input-text \n    [formControl]=\"inputValue\"\n    [isInvalid]=\"(inputValue | isInvalid)\"\n>\n    <ng-container label>My Input</ng-container>\n    <ng-container errors>My error text</ng-container>\n    <ng-container warnings>My warning text</ng-container>\n    <ng-container success>My success text</ng-container>\n</ef-form-input-text>\n<router-outlet></router-outlet>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-c3d6ab917ff0ca6639a48f6af438986fc563e8ad0c27599750fa14cc1deff1605941d67470acbd50919eebe4eafd16032f0a59674b22e3cdf836f0a7928db670",
+            "file": "src/app/shared/button/button.component.ts",
+            "encapsulation": [
+                "ViewEncapsulation.None"
+            ],
+            "entryComponents": [],
+            "host": {},
+            "inputs": [
+                "isDisabled"
+            ],
+            "outputs": [],
+            "providers": [],
+            "selector": "ef-button",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "trigger",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "EventEmitter<void>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter,Input, Output, ViewEncapsulation } from '@angular/core';\n\n@Component({\n  selector: 'ef-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  host: {\n    'class': 'ef-button',\n    '[class.ef-button-disabled]': 'isDisabled'\n  },\n  inputs: ['isDisabled'],\n  encapsulation: ViewEncapsulation.None\n})\nexport class ButtonComponent {\n  @Output() trigger: EventEmitter<void> = new EventEmitter();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@mixin set-button-color($background-color, $stroke, $color, $drop-shadow) {\r\n    .ef-button-elements {\r\n        filter: $drop-shadow;\r\n        stroke: $background-color;\r\n    }\r\n\r\n    .ef-button-outer {\r\n        fill: $background-color;\r\n        filter: $drop-shadow;\r\n    }\r\n\r\n    .ef-button-inner {\r\n        fill: $background-color;\r\n        stroke: $stroke;\r\n    }\r\n\r\n    .ef-button-content {\r\n        color: $color;\r\n    }\r\n}\r\n\r\n.ef-button {\r\n    $color-primary: var(--color-primary);\r\n    $color-light-primary: var(--color-light-primary);\r\n    $color-dark-primary: var(--color-dark-primary);\r\n    $color-secondary: var(--color-secondary);\r\n    $color-light-secondary: var(--color-light-secondary);\r\n    $color-dark-secondary: var(--color-dark-secondary);\r\n    $color-tertiary: var(--color-tertiary);\r\n    $color-light-tertiary: var(--color-light-tertiary);\r\n    $color-dark-tertiary: var(--color-dark-tertiary);\r\n    $color-black: var(--color-black);\r\n    $color-white: var(--color-white);\r\n    $color-light-white: var(--color-light-white);\r\n    $color-dark-white: var(--color-dark-white);\r\n    $color-gray: var(--color-gray);\r\n    $drop-shadow: var(--drop-shadow);\r\n    $button-opacity: var(--button-opacity);\r\n\r\n    position: relative;\r\n    width: 300px;\r\n    height: 90px;\r\n    display: block;\r\n    transition: var(--transition-bezier);\r\n\r\n    &.ef-icon-button:not(.ef-button-filled) {\r\n        width: 40px;\r\n        height: 40px;\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: center;\r\n\r\n        .ef-icon {\r\n            background-color: var(--color-white);\r\n        }\r\n\r\n        &:not(.ef-button-disabled) {\r\n            &:hover {\r\n                cursor: pointer;\r\n                .ef-icon {\r\n                    background-color: var(--color-white);\r\n                }\r\n    \r\n                .ef-button-content {\r\n                    border-bottom: 2px solid var(--color-white);\r\n                }\r\n            }\r\n    \r\n            &:active, &:focus {\r\n                cursor: pointer;\r\n                .ef-icon {\r\n                    background-color: var(--color-dark-white);\r\n                }\r\n    \r\n                .ef-button-content {\r\n                    border-bottom: 2px solid var(--color-dark-white);\r\n                }\r\n            }\r\n        }\r\n\r\n        &.ef-button-disabled {\r\n            opacity: var(--button-opacity);\r\n        }\r\n\r\n\r\n        .ef-button-content {\r\n            width: 40px;\r\n            top: 0;\r\n            left: 0;\r\n            transform: none;\r\n            position: relative; \r\n        }\r\n\r\n        svg {\r\n            display: none;\r\n        }\r\n    }\r\n\r\n    &.ef-icon-button.ef-button-filled {\r\n        width: 40px;\r\n        height: 40px;\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: center;\r\n\r\n        .ef-icon {\r\n            background-color: var(--color-white);\r\n        }\r\n\r\n        &:not(.ef-button-disabled):not(.ef-button-primary):not(.ef-button-secondary):not(.ef-button-tertiary) {\r\n            &:hover {\r\n                cursor: pointer;\r\n                .ef-icon {\r\n                    background-color: var(--color-white);\r\n                }\r\n            }\r\n    \r\n            &:active, &:focus {\r\n                cursor: pointer;\r\n                .ef-icon {\r\n                    background-color: var(--color-dark-white);\r\n                }\r\n    \r\n                .ef-button-content {\r\n                    border-bottom: 2px solid var(--color-dark-white);\r\n                }\r\n            }\r\n        }\r\n\r\n        &.ef-button-disabled {\r\n            opacity: var(--button-opacity);\r\n        }\r\n\r\n        &.ef-button-primary {\r\n            background-color: var(--color-primary);\r\n            border: 1px solid var(--color-white);\r\n\r\n            &:not(.ef-button-disabled) {\r\n                &:hover {\r\n                    cursor: pointer;\r\n                    background-color: var(--color-light-primary);\r\n                }\r\n        \r\n                &:active, &:focus {\r\n                    cursor: pointer;\r\n                    background-color: var(--color-dark-primary);\r\n                }\r\n            }\r\n\r\n            &.ef-button-disabled {\r\n                opacity: var(--button-opacity);\r\n            }\r\n           \r\n        }\r\n        &.ef-button-secondary {\r\n            background-color: var(--color-secondary);\r\n            border: 1px solid var(--color-tertiary);\r\n            &:not(.ef-button-disabled) {\r\n                &:hover {\r\n                    cursor: pointer;\r\n                    background-color: var(--color-light-secondary);\r\n                }\r\n        \r\n                &:active, &:focus {\r\n                    cursor: pointer;\r\n                    background-color: var(--color-dark-secondary);\r\n                }\r\n            }\r\n            &.ef-button-disabled {\r\n                opacity: var(--button-opacity);\r\n            }\r\n        }\r\n        &.ef-button-tertiary {\r\n            background-color: var(--color-tertiary);\r\n            border: 1px solid var(--color-secondary);\r\n            &:not(.ef-button-disabled) {\r\n                &:hover {\r\n                    cursor: pointer;\r\n                    background-color: var(--color-light-tertiary);\r\n                }\r\n        \r\n                &:active, &:focus {\r\n                    cursor: pointer;\r\n                    background-color: var(--color-dark-tertiary);\r\n                }\r\n            }\r\n            &.ef-button-disabled {\r\n                opacity: var(--button-opacity);\r\n            }\r\n        }\r\n\r\n        .ef-button-content {\r\n            width: 40px;\r\n            top: 0;\r\n            left: 0;\r\n            transform: none;\r\n            position: relative; \r\n        }\r\n\r\n        svg {\r\n            display: none;\r\n        }\r\n    }\r\n\r\n    &:not(.ef-button-primary):not(.ef-button-secondary):not(.ef-button-tertiary) {\r\n        @include set-button-color($color-white, $color-primary, $color-black, $drop-shadow);\r\n\r\n        &:not(.ef-button-disabled) {\r\n            &:hover {\r\n                cursor: pointer;\r\n                @include set-button-color($color-light-white, $color-primary, $color-black, $drop-shadow);\r\n            }\r\n    \r\n            &:active, &:focus {\r\n                @include set-button-color($color-dark-white, $color-primary, $color-black, $drop-shadow);\r\n            }\r\n        }\r\n\r\n        &.ef-button-disabled {\r\n            opacity: var(--button-opacity);\r\n            cursor: not-allowed;\r\n        }\r\n    }\r\n\r\n    &.ef-link-button {\r\n        width: fit-content;\r\n        height: auto;\r\n\r\n        &:not(.ef-button-primary):not(.ef-button-secondary):not(.ef-button-tertiary) {\r\n            &:not(.ef-button-disabled) a {\r\n                color: var(--color-white);\r\n\r\n                &:hover {\r\n                    cursor: pointer;\r\n                    text-decoration: underline;\r\n                }\r\n\r\n            }\r\n\r\n            &.ef-button-disabled a {\r\n                color: var(--color-white);\r\n                opacity: var(--button-opacity);\r\n                cursor: none;\r\n            }\r\n        }\r\n\r\n        &.ef-button-primary {\r\n            &:not(.ef-button-disabled) a {\r\n                color: var(--color-primary);\r\n\r\n                &:hover {\r\n                    cursor: pointer;\r\n                    text-decoration: underline;\r\n                    color: var(--color-light-primary);\r\n                }\r\n\r\n                &:active, &:focus {\r\n                    cursor: pointer;\r\n                    text-decoration: underline;\r\n                    color: var(--color-dark-primary);\r\n                }\r\n            }\r\n\r\n            &.ef-button-disabled a {\r\n                color: var(--color-primary);\r\n                cursor: none;\r\n                opacity: var(--button-opacity);\r\n            }\r\n\r\n        }\r\n\r\n        &.ef-button-secondary {\r\n            &:not(.ef-button-disabled) a {\r\n                color: var(--color-secondary);\r\n\r\n                &:hover {\r\n                    cursor: pointer;\r\n                    text-decoration: underline;\r\n                    color: var(--color-light-secondary);\r\n                }\r\n\r\n                &:active, &:focus {\r\n                    cursor: pointer;\r\n                    text-decoration: underline;\r\n                    color: var(--color-dark-secondary);\r\n                }\r\n            }\r\n\r\n            &.ef-button-disabled a {\r\n                color: var(--color-secondary);\r\n                cursor: none;\r\n                opacity: var(--button-opacity);\r\n            }\r\n\r\n        }\r\n\r\n        &.ef-button-tertiary {\r\n            &:not(.ef-button-disabled) a {\r\n                color: var(--color-tertiary);\r\n\r\n                &:hover {\r\n                    cursor: pointer;\r\n                    text-decoration: underline;\r\n                    color: var(--color-light-tertiary);\r\n                }\r\n\r\n                &:active, &:focus {\r\n                    cursor: pointer;\r\n                    text-decoration: underline;\r\n                    color: var(--color-dark-tertiary);\r\n                }\r\n            }\r\n\r\n            &.ef-button-disabled a {\r\n                color: var(--color-tertiary);\r\n                cursor: none;\r\n                opacity: var(--button-opacity);\r\n            }\r\n\r\n        }\r\n\r\n        .ef-button-content {\r\n            width: fit-content;\r\n            top: 0;\r\n            left: 0;\r\n            transform: none;\r\n            position: relative; \r\n            font-size: var(--font-size-md);\r\n        }\r\n\r\n        svg {\r\n            display: none;\r\n        }\r\n    }\r\n    \r\n    &-primary {\r\n        @include set-button-color($color-primary, $color-white, $color-white, $drop-shadow);\r\n        &:not(.ef-button-disabled) {\r\n            &:hover {\r\n                cursor: pointer;\r\n                @include set-button-color($color-light-primary, $color-white, $color-white, $drop-shadow);\r\n            }\r\n            &:active, &:focus {\r\n                @include set-button-color($color-dark-primary, $color-white, $color-white, $drop-shadow);\r\n            }\r\n        }\r\n        &.ef-button-disabled {\r\n            opacity: var(--button-opacity);\r\n            cursor: not-allowed;\r\n        }\r\n    }\r\n\r\n    &-secondary {\r\n        @include set-button-color($color-secondary, $color-tertiary, $color-black, $drop-shadow);\r\n        &:not(.ef-button-disabled) {\r\n\r\n            &:hover {\r\n                cursor: pointer;\r\n                @include set-button-color($color-light-secondary, $color-tertiary, $color-black, $drop-shadow);\r\n            }\r\n            &:active, &:focus {\r\n                @include set-button-color($color-dark-secondary, $color-tertiary, $color-black, $drop-shadow);\r\n            }\r\n        }\r\n        &.ef-button-disabled {\r\n            opacity: var(--button-opacity);\r\n            cursor: not-allowed;\r\n        }\r\n    }\r\n\r\n    &-tertiary {\r\n        @include set-button-color($color-tertiary, $color-secondary, $color-white, $drop-shadow);\r\n        &:not(.ef-button-disabled) {\r\n            &:hover {\r\n                cursor: pointer;\r\n                @include set-button-color($color-light-tertiary, $color-secondary, $color-white, $drop-shadow);\r\n            }\r\n            &:active, &:focus {\r\n                @include set-button-color($color-dark-tertiary, $color-secondary, $color-white, $drop-shadow);\r\n            }\r\n        }\r\n        &.ef-button-disabled {\r\n            opacity: var(--button-opacity);\r\n            cursor: not-allowed;\r\n        }\r\n    }\r\n\r\n    &-content {\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: center;\r\n        position: absolute;\r\n        top: 42%;\r\n        left: 50%;\r\n        transform: translate(-50%, -50%);\r\n        font-size: var(--font-size-lg);\r\n    }\r\n}",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<svg width=\"100%\" height=\"100%\"  viewBox=\"0 0 313 88\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g >\n        <path class=\"ef-button-elements\" d=\"M16.6338 30.3668L24.1231 37.8562L16.6338 45.3455L9.14445 37.8562L16.6338 30.3668Z\" stroke=\"#CACACA\" stroke-width=\"3.032\" shape-rendering=\"crispEdges\"/>\n    </g>\n    <g >\n        <path class=\"ef-button-outer\" d=\"M34.6675 0.712372L278.892 0.712372L294.811 24.0599L281.015 37.8562L294.823 52.7137L278.892 75H34.5929L18.6865 52.7137L32.545 37.8562L18.7611 24.0599L34.6675 0.712372Z\" fill=\"#CACACA\"/>\n    </g>\n    <g >\n        <rect class=\"ef-button-elements\" x=\"296.877\" y=\"30.3668\" width=\"10.5915\" height=\"10.5915\" transform=\"rotate(45 296.877 30.3668)\" stroke=\"#CACACA\" stroke-width=\"3.032\" shape-rendering=\"crispEdges\"/>\n    </g>\n    <path class=\"ef-button-inner\" d=\"M274.96 37.3202L274.444 37.8367L274.941 38.372L288.314 52.7739L275.109 71.0582H38.1633L24.958 52.7739L38.3312 38.372L38.8283 37.8367L38.3118 37.3202L24.9603 23.9688L38.1756 4.65413H275.096L288.312 23.9688L274.96 37.3202Z\" stroke=\"#780922\" stroke-width=\"1.516\"/>\n</svg>\n<span class=\"ef-button-content\">\n    <ng-content></ng-content>\n</span>\n"
+        },
+        {
+            "name": "CardComponent",
+            "id": "component-CardComponent-0f2314931a6211f87c5437c86a5981e1c228d14708fbb0a147084d76dd6e7baa31c00276dfc406f1660a53eb8dff4993280d7e72b3ba515572890c6582325938",
+            "file": "src/app/shared/card/card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "host": {},
+            "inputs": [
+                "disabled"
+            ],
+            "outputs": [],
+            "providers": [],
+            "selector": "ef-card",
+            "styleUrls": [
+                "./card.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./card.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'ef-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss'],\n  host: {\n    'class': 'ef-card',\n    'class.disabled': 'disabled'\n  },\n  inputs: ['disabled']\n})\nexport class CardComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".ef-card {\r\n    outline: 1.5px solid var(--color-secondary);\r\n    outline-offset: 5px;\r\n\r\n    &:hover {\r\n        background-color: var(--color-black);\r\n        filter: blur(35.5px);\r\n    }\r\n\r\n    &.disabled {\r\n        opacity: var(--button-opacity);\r\n    }\r\n}",
+                    "styleUrl": "./card.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<ng-content></ng-content>"
+        },
+        {
+            "name": "FormInputTextComponent",
+            "id": "component-FormInputTextComponent-e64dbf132230bf9a08276d7a5ce23ee044ecfcb776c3768619696dcf3227f720d47288783f58d7f390fcaf3d5adc391db9f1611bf055e27ab0e0354f039bdfe2",
+            "file": "src/app/shared/form/form-input-text/form-input-text.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => FormInputTextComponent), multi: true,\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "ef-form-input-text",
+            "styleUrls": [
+                "./form-input-text.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./form-input-text.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "autocomplete",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 36,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "currency",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 38,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "isInvalid",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "max",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 30,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "maxlength",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "min",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "minlength",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 28,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "readonly",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 34,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "currentValue",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | number",
+                    "optional": false,
+                    "description": "",
+                    "line": 39,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "inputTextRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef",
+                    "optional": false,
+                    "description": "",
+                    "line": 19,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'inputText'"
+                        }
+                    ],
+                    "modifierKind": [
+                        167,
+                        123
+                    ]
+                },
+                {
+                    "name": "isDisabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 40,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "isFilled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 43,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "isFocusValue",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 44,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "onChange",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 41,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "onTouch",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 42,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "handleBlur",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 65,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "handleChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 69,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "handleFocus",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 57,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "initializeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string | number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 98,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string | number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 81,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 85,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setDisabledState",
+                    "args": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 89,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string | number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 93,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string | number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, forwardRef, Input, ViewChild } from '@angular/core';\r\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\r\n\r\n@Component({\r\n  selector: 'ef-form-input-text',\r\n  templateUrl: './form-input-text.component.html',\r\n  styleUrls: ['./form-input-text.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n  providers: [\r\n    {\r\n      provide: NG_VALUE_ACCESSOR,\r\n      useExisting: forwardRef(() => FormInputTextComponent),\r\n      multi: true,\r\n    },\r\n  ],\r\n})\r\nexport class FormInputTextComponent implements ControlValueAccessor {\r\n  @ViewChild('inputText')\r\n  public inputTextRef!: ElementRef;\r\n  @Input()\r\n  public isInvalid!: boolean;\r\n  @Input() public placeholder: string;\r\n  @Input()\r\n  public readonly!: boolean;\r\n  @Input()\r\n  public maxlength!: number;\r\n  @Input()\r\n  public minlength!: number;\r\n  @Input()\r\n  public max!: number;\r\n  @Input()\r\n  public min!: number;\r\n  @Input()\r\n  public type!: string;\r\n  @Input()\r\n  public autocomplete!: string;\r\n  @Input()\r\n  public currency!: boolean;\r\n  public currentValue: string | number;\r\n  public isDisabled!: boolean;\r\n  public onChange: any;\r\n  public onTouch: any;\r\n  public isFilled: boolean = false;\r\n  private isFocusValue!: boolean;\r\n\r\n  get isFocus(): boolean {\r\n    return this.isFocusValue;\r\n  }\r\n\r\n  constructor(private cdRef: ChangeDetectorRef) {\r\n    this.placeholder = '';\r\n    this.currentValue = '';\r\n    this.onChange = (_: any) => { };\r\n    this.onTouch = () => { };\r\n  }\r\n\r\n  handleFocus(): void {\r\n    this.inputTextRef.nativeElement.focus();\r\n    this.inputTextRef.nativeElement.select();\r\n    this.isFocusValue = true;\r\n    this.cdRef.markForCheck();\r\n    this.onTouch();\r\n  }\r\n\r\n  handleBlur(): void {\r\n    this.isFocusValue = false;\r\n  }\r\n\r\n  handleChange(event: any): void {\r\n    if (event.target.value) {\r\n      this.isFilled = true;\r\n    } else {\r\n      this.isFilled = false;\r\n    }\r\n    \r\n    this.currentValue = event.target.value;\r\n    this.onChange(this.currentValue);\r\n    this.onTouch();\r\n  }\r\n\r\n  registerOnChange(fn: any): void {\r\n    this.onChange = fn;\r\n  }\r\n\r\n  registerOnTouched(fn: any): void {\r\n    this.onTouch = fn;\r\n  }\r\n\r\n  setDisabledState(isDisabled: boolean): void {\r\n    this.isDisabled = isDisabled;\r\n  }\r\n\r\n  writeValue(value: string | number): void {\r\n    this.initializeValue(value);\r\n    this.cdRef.markForCheck();\r\n  }\r\n\r\n  private initializeValue(value: string | number): void {\r\n    this.currentValue = value;\r\n    if (value) { this.onTouch(); }\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "input {\r\n    width: 100%;\r\n    border: none;\r\n    position: relative;\r\n    height: 98%;\r\n    top: 0px;\r\n    left: -1px;\r\n    background-color: transparent;\r\n    color: var(--color-white); \r\n    font-size: var(--font-size-lg);\r\n    font-family: \"Besley Italic\";\r\n    box-sizing: border-box;\r\n\r\n    &:focus {\r\n        outline: none;\r\n        top: -6px;       \r\n    }\r\n\r\n    &.invalid {\r\n        border-right: 15px solid var(--color-error);\r\n        top: -10px;\r\n        height: 114%;\r\n    }\r\n\r\n    &.typing{\r\n        border-right: 15px solid var(--color-warning);\r\n        top: -10px;\r\n        height: 114%;\r\n    }\r\n\r\n    &.filled{\r\n        border-right: 15px solid var(--color-success);\r\n        top: -10px;\r\n        height: 114%;\r\n    }\r\n}",
+                    "styleUrl": "./form-input-text.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "cdRef",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 48,
+                "jsdoctags": [
+                    {
+                        "name": "cdRef",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "ControlValueAccessor"
+            ],
+            "accessors": {
+                "isFocus": {
+                    "name": "isFocus",
+                    "getSignature": {
+                        "name": "isFocus",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 46
+                    }
+                }
+            },
+            "templateData": "<ef-form-wrap-input [isInvalid]=\"isInvalid\" [isFocus]=\"isFocus\" [isFilled]=\"isFilled\" (click)=\"handleFocus()\">\r\n    <ng-container field>\r\n        <input \r\n            [class.invalid]=\"isInvalid\"\r\n            [class.typing]=\"isFocus && isFilled && !isInvalid\"\r\n            [class.filled]=\"!isFocus && isFilled && !isInvalid\"\r\n            [type]=\"type || 'text'\"\r\n            [value]=\"currentValue\"\r\n            [placeholder]=\"placeholder\"\r\n            [autocomplete]=\"autocomplete\"\r\n            [readonly]=\"readonly\"\r\n            [attr.min]=\"min\"\r\n            [attr.max]=\"max\"\r\n            [attr.maxlength]=\"maxlength\"\r\n            [attr.minlength]=\"minlength\"\r\n            (input)=\"handleChange($event)\"\r\n            (focus)=\"handleFocus()\"\r\n            (blur)=\"handleBlur()\"\r\n            #inputText\r\n        >\r\n    </ng-container>\r\n    <ng-container label><ng-content select=\"[label]\"></ng-content></ng-container>\r\n    <ng-container icon><ng-content select=\"[icon]\"></ng-content></ng-container>\r\n    <ng-container errors><ng-content select=\"[errors]\"></ng-content></ng-container>\r\n    <ng-container warnings><ng-content select=\"[warnings]\"></ng-content></ng-container>\r\n    <ng-container success><ng-content select=\"[success]\"></ng-content></ng-container>\r\n\r\n</ef-form-wrap-input>\r\n"
+        },
+        {
+            "name": "FormSelectDropdownComponent",
+            "id": "component-FormSelectDropdownComponent-d338187a9cbefd3cf1ecc57bc349fd3d98efbe0b203ab83d216cc9a8d66540c08c5297195fb5b3b3d2f68a427516956b8754c8817493a7f1b827f6a025f4c1b9",
+            "file": "src/app/shared/form/form-select-dropdown/form-select-dropdown.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => FormSelectDropdownComponent), multi: true,\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "ef-form-select-dropdown",
+            "styleUrls": [
+                "./form-select-dropdown.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./form-select-dropdown.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "isInvalid",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "options",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "SelectOptionModel[]",
+                    "decorators": []
+                },
+                {
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "readonly",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "currentValue",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SelectOptionModel",
+                    "optional": false,
+                    "description": "",
+                    "line": 25,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "inputSelectRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef",
+                    "optional": false,
+                    "description": "",
+                    "line": 18,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'inputSelect'"
+                        }
+                    ],
+                    "modifierKind": [
+                        167,
+                        123
+                    ]
+                },
+                {
+                    "name": "isDisabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 26,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "isFilled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 29,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "isFocusValue",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 31,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "onChange",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 27,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "onTouch",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 28,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "showDropdown",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 30,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "handleBlur",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 60,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "handleChange",
+                    "args": [
+                        {
+                            "name": "option",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 64,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "option",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "handleFocus",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 54,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "initializeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "SelectOptionModel",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 100,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "SelectOptionModel",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 77,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 81,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setDisabledState",
+                    "args": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 85,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "toggleOptions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 94,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "SelectOptionModel",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 89,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "SelectOptionModel",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, ElementRef, ViewChild, Input, ChangeDetectorRef, forwardRef, OnChanges, SimpleChanges, AfterViewInit } from '@angular/core';\r\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\r\nimport { SelectOptionModel } from 'src/app/core/models/select-option.model';\r\n\r\n@Component({\r\n  selector: 'ef-form-select-dropdown',\r\n  templateUrl: './form-select-dropdown.component.html',\r\n  styleUrls: ['./form-select-dropdown.component.scss'],\r\n  providers: [\r\n    {\r\n      provide: NG_VALUE_ACCESSOR,\r\n      useExisting: forwardRef(() => FormSelectDropdownComponent),\r\n      multi: true,\r\n    },\r\n  ],\r\n})\r\nexport class FormSelectDropdownComponent implements ControlValueAccessor, OnChanges {\r\n  @ViewChild('inputSelect') public inputSelectRef!: ElementRef;\r\n  @Input() public isInvalid!: boolean;\r\n  @Input() public placeholder: string;\r\n  @Input()\r\n  public readonly: boolean = false;\r\n  @Input()\r\n  public options: SelectOptionModel[] = [];\r\n  public currentValue!: SelectOptionModel;\r\n  public isDisabled: boolean = false;\r\n  public onChange: any;\r\n  public onTouch: any;\r\n  public isFilled: boolean = false;\r\n  public showDropdown: boolean = false;\r\n  private isFocusValue: boolean = false;\r\n\r\n  get isFocus(): boolean {\r\n    return this.isFocusValue;\r\n  }\r\n\r\n  constructor(\r\n    private cdRef: ChangeDetectorRef\r\n  ) {\r\n    this.placeholder = '';\r\n    this.onChange = (_: any) => { };\r\n    this.onTouch = () => { };\r\n  }\r\n\r\n  ngOnChanges(changes: SimpleChanges): void {\r\n    if (changes?.['options']?.currentValue) {\r\n      this.options = changes?.['options']?.currentValue;\r\n      if (this.currentValue) {\r\n        this.handleChange(this.currentValue)\r\n      }\r\n    }\r\n  }\r\n\r\n  handleFocus(): void {\r\n    this.isFocusValue = true;\r\n    this.cdRef.markForCheck();\r\n    this.onTouch();\r\n  }\r\n\r\n  handleBlur(): void {\r\n    this.isFocusValue = false;\r\n  }\r\n\r\n  handleChange(option: any): void {\r\n    if (option) {\r\n      this.isFilled = true;\r\n    } else {\r\n      this.isFilled = false;\r\n    }\r\n    this.currentValue = option;\r\n    this.showDropdown = false;\r\n    this.cdRef.markForCheck();\r\n    this.onChange(this.currentValue);\r\n    this.onTouch();\r\n  }\r\n\r\n  registerOnChange(fn: any): void {\r\n    this.onChange = fn;\r\n  }\r\n\r\n  registerOnTouched(fn: any): void {\r\n    this.onTouch = fn;\r\n  }\r\n\r\n  setDisabledState(isDisabled: boolean): void {\r\n    this.isDisabled = isDisabled;\r\n  }\r\n\r\n  writeValue(value: SelectOptionModel): void {\r\n    this.initializeValue(value);\r\n    this.cdRef.markForCheck();\r\n  }\r\n\r\n  toggleOptions(): void {\r\n    this.showDropdown = !this.showDropdown;\r\n    this.cdRef.markForCheck();\r\n\r\n  }\r\n\r\n  private initializeValue(value: SelectOptionModel): void {\r\n    this.currentValue = value;\r\n    if (value) { this.onTouch(); }\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "    #mainSelect {\r\n        width: calc(100% + 9px);\r\n        border: none;\r\n        position: relative;\r\n        height: 98%;\r\n        top: 0px;\r\n        left: -10px;\r\n        background-color: transparent;\r\n        color: var(--color-white); \r\n        font-size: var(--font-size-lg);\r\n        font-family: \"Besley Italic\";\r\n        box-sizing: border-box;\r\n        transition: var(--transition-bezier);\r\n\r\n    \r\n        &.focused {\r\n            outline: none;\r\n            top: -10px;       \r\n        }\r\n    \r\n        &.invalid {\r\n            border-right: 15px solid var(--color-error);\r\n            top: -10px;\r\n            height: 114%;\r\n        }\r\n    \r\n        &.typing{\r\n            border-right: 15px solid var(--color-warning);\r\n            top: -10px;\r\n            height: auto;\r\n        }\r\n    \r\n        &.filled{\r\n            border-right: 15px solid var(--color-success);\r\n            top: -10px;\r\n            height: 114%;\r\n        }\r\n\r\n        .option-panel {\r\n            background-color: var(--color-white);\r\n        }\r\n\r\n\r\n        & .option-selected {\r\n            height: 85px;\r\n            display: flex;\r\n            align-items: center;\r\n            justify-content: space-evenly;\r\n            padding-left: 10px;\r\n            cursor: pointer;\r\n\r\n            span {\r\n                font-family: var(--font-family-paragraph-italic);\r\n            }\r\n\r\n            .ef-icon--arrow {\r\n                margin-left: auto;\r\n                padding-right: 10px;\r\n                background-color: var(--color-white);\r\n                transition: var(--transition-bezier);\r\n            }\r\n    \r\n\r\n            &--value {\r\n                height: 70px;\r\n            }\r\n\r\n            &--open {\r\n                background-color: var(--color-gray);\r\n\r\n                .ef-icon--arrow {\r\n                    transform: rotate(-180deg);\r\n                }\r\n        \r\n            }\r\n        }\r\n    \r\n        & .option {\r\n            height: 50px;\r\n            padding: 0px 10px;\r\n            display: flex;\r\n            align-items: center;\r\n            color: var(--color-black);\r\n            font-size: var(--font-size-md);\r\n            cursor: pointer;\r\n            transition: var(--transition-bezier);\r\n\r\n    \r\n            &:hover {\r\n                color: var(--color-white);\r\n                background-color: var(--color-primary);\r\n            }\r\n        }\r\n    \r\n        & .option:disabled {\r\n            opacity: var(--button-opacity);\r\n        }\r\n    }\r\n",
+                    "styleUrl": "./form-select-dropdown.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "cdRef",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 35,
+                "jsdoctags": [
+                    {
+                        "name": "cdRef",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "ControlValueAccessor",
+                "OnChanges"
+            ],
+            "accessors": {
+                "isFocus": {
+                    "name": "isFocus",
+                    "getSignature": {
+                        "name": "isFocus",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 33
+                    }
+                }
+            },
+            "templateData": "<ef-form-wrap-input [class.ef-form-wrap-open]=\"showDropdown && currentValue\" [class.ef-form-wrap-open--no-options]=\"showDropdown && !currentValue\" [isInvalid]=\"isInvalid\" [isFocus]=\"showDropdown\"  [isFilled]=\"isFilled\"  (click)=\"handleFocus()\">\r\n    <ng-container field>\r\n        <div \r\n            id=\"mainSelect\"\r\n            [class.invalid]=\"isInvalid\"\r\n            [class.typing]=\"showDropdown && isFilled && !isInvalid\"\r\n            [class.filled]=\"!showDropdown && isFilled && !isInvalid\"\r\n            [class.focused]=\"showDropdown\"\r\n        >\r\n            <div class=\"option-selected\" [class.option-selected--value]=\"currentValue\" [class.option-selected--open]=\"showDropdown\" (click)=\"toggleOptions()\">\r\n                <span>{{ currentValue ? currentValue.label : null }} </span>\r\n                <i class=\"ef-icon ef-icon--arrow\"></i>\r\n            </div>\r\n            <div class=\"option-panel\" *ngIf=\"showDropdown\">\r\n                <div class=\"option\" \r\n                    *ngFor=\"let option of options\"  \r\n                    [class.selected]=\"currentValue && option?.id?.toString() === currentValue.id\" \r\n                    [class.disabled]=\"readonly\"\r\n                    (click)=\"handleChange(option)\"\r\n                >\r\n                    {{option?.label}}\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- <select \r\n            id=\"mainSelect\"\r\n            [class.invalid]=\"isInvalid\"\r\n            [class.typing]=\"isFocus && isFilled && !isInvalid\"\r\n            [class.filled]=\"!isFocus && isFilled && !isInvalid\"\r\n            [(ngModel)]=\"currentValue\"\r\n            (change)=\"handleChange($event)\"\r\n            (focus)=\"handleFocus()\"\r\n            (blur)=\"handleBlur()\"\r\n        >\r\n            <option disabled selected [value]=\"null\"> -- Selecciona una opción -- </option>\r\n            <option *ngFor=\"let option of options\" [value]=\"option._id || option.id\" [selected]=\"option?._id?.toString() === inputSelect.value || option?.id?.toString() === inputSelect.value\" [disabled]=\"readonly\">{{option.label}}</option>\r\n        </select> -->\r\n        \r\n    </ng-container>\r\n    <ng-container label><ng-content select=\"[label]\"></ng-content></ng-container>\r\n    <ng-container errors><ng-content select=\"[errors]\"></ng-content></ng-container>\r\n    <ng-container warnings><ng-content select=\"[warnings]\"></ng-content></ng-container>\r\n    <ng-container success><ng-content select=\"[success]\"></ng-content></ng-container>\r\n\r\n</ef-form-wrap-input>\r\n"
+        },
+        {
+            "name": "FormWrapInputComponent",
+            "id": "component-FormWrapInputComponent-9fb777119b5533346d9f39acc1e9288a937e586b8c0b404012e0c543f60003bdb0cc94fc2727b6bb8e9578226435aba5de163020d8e8a329c1aeaa652ccbb94c",
+            "file": "src/app/shared/form/form-wrap-input/form-wrap-input.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.None"
+            ],
+            "entryComponents": [],
+            "host": {},
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ef-form-wrap-input",
+            "styleUrls": [
+                "./form-wrap-input.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./form-wrap-input.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "isFilled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "isFocus",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "isInvalid",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, ChangeDetectionStrategy, Input, ViewEncapsulation } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'ef-form-wrap-input',\r\n  templateUrl: './form-wrap-input.component.html',\r\n  styleUrls: ['./form-wrap-input.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush,\r\n  encapsulation: ViewEncapsulation.None,\r\n  host: {\r\n    'class': 'ef-form-wrap-input',\r\n  }\r\n})\r\nexport class FormWrapInputComponent {\r\n  @Input() public isInvalid!: boolean;\r\n  @Input() public isFocus!: boolean;\r\n  @Input() public isFilled!: boolean;\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".ef-form-wrap-input {\r\n\r\n    .wrap-input {\r\n        position: relative;\r\n\r\n        &__fieldset {\r\n            padding: 5px;\r\n            border: 1.5px solid var(--color-dark-secondary);\r\n            height: 85px;\r\n            margin-inline-start: 5px;\r\n            margin-inline-end: 5px;\r\n            padding-inline-start: 15px;\r\n\r\n            &::before {\r\n                content: \" \";\r\n                background-color: transparent;\r\n                border: 1.5px solid var(--color-white);\r\n                width: calc(100% - 23px);\r\n                height: 85px;\r\n                position: absolute;\r\n                display: block;\r\n                top: 5px;\r\n                right: 0px;\r\n                left: 10px;\r\n                bottom: 0;\r\n                z-index: -1;\r\n                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));\r\n                transition: var(--transition-bezier);\r\n\r\n            }\r\n        }\r\n\r\n        &__label {\r\n            font-size: var(--font-size-lg);\r\n            font-family: \"Besley\";\r\n            text-transform: capitalize;\r\n            position: absolute;\r\n            padding-inline-start: 5px;\r\n            padding-inline-end: 5px;\r\n            z-index: 1;\r\n            color: var(--color-white);\r\n            transition: var(--transition-bezier);\r\n            top: 50%;\r\n            transform: translateY(-50%);\r\n\r\n\r\n            &::after {\r\n                content: \"\";\r\n                position: absolute;\r\n                width: 100%;\r\n                height: 50%;\r\n                bottom: 0;\r\n                left: 0;\r\n                background-color: #525356;\r\n                z-index: -1;\r\n            }\r\n        }\r\n\r\n        &__icon {\r\n            position: relative;\r\n            top: -3.5rem;\r\n            right: -90%;\r\n            cursor: pointer;\r\n        }\r\n\r\n        &__error {\r\n            font-size: var(--font-size-sm);\r\n            padding-left: 1.5rem;\r\n            color: var(--color-error);\r\n            display: none;\r\n            position: relative;\r\n        }\r\n\r\n        &__warning {\r\n            font-size: var(--font-size-sm);\r\n            padding-left: 1.5rem;\r\n            color: var(--color-warning);\r\n            display: none;\r\n            position: relative;\r\n        }\r\n\r\n        &__success{\r\n            font-size: var(--font-size-sm);\r\n            padding-left: 1.5rem;\r\n            color: var(--color-success);\r\n            display: none;\r\n            position: relative;\r\n        }\r\n\r\n        &--invalid {\r\n            & .wrap-input__error {\r\n                display: block;\r\n            }\r\n\r\n            .wrap-input__label {\r\n                top: 0;\r\n                transform: none;\r\n                font-size: var(--font-size-sm);\r\n                position: relative;\r\n            }\r\n\r\n            .wrap-input__fieldset {\r\n                &::before {\r\n                    top: 19px;\r\n                    height: 70px;\r\n                }\r\n            }\r\n        }\r\n\r\n        &--filled.wrap-input--focus:not(.wrap-input--invalid) {\r\n            & .wrap-input__warning {\r\n                display: block;\r\n            }\r\n\r\n            .wrap-input__label {\r\n                top: 0;\r\n                transform: none;\r\n                font-size: var(--font-size-sm);\r\n                position: relative;\r\n            }\r\n\r\n            .wrap-input__fieldset {\r\n                &::before {\r\n                    top: 19px;\r\n                    height: 70px;\r\n                }\r\n            }\r\n        }\r\n\r\n        &--filled:not(.wrap-input--focus):not(.wrap-input--invalid) {\r\n            & .wrap-input__success {\r\n                display: block;\r\n            }\r\n\r\n            .wrap-input__label {\r\n                top: 0;\r\n                transform: none;\r\n                font-size: var(--font-size-sm);\r\n                position: relative;\r\n            }\r\n\r\n            .wrap-input__fieldset {\r\n                &::before {\r\n                    top: 19px;\r\n                    height: 70px;\r\n                }\r\n            }\r\n        }\r\n\r\n\r\n        &--focus, &--filled {\r\n            .wrap-input__label {\r\n                top: 0;\r\n                transform: none;\r\n                font-size: var(--font-size-sm);\r\n                position: relative;\r\n            }\r\n\r\n            .wrap-input__fieldset {\r\n                &::before {\r\n                    top: 19px;\r\n                    height: 70px;\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n.ef-form-wrap-open {\r\n\r\n    &--no-options {\r\n        .wrap-input {\r\n            &__fieldset {\r\n                height: auto;\r\n    \r\n                &::before {\r\n                    height: calc(100% - 36px) !important;\r\n                }\r\n            }\r\n        }\r\n    }\r\n    .wrap-input {\r\n        &__fieldset {\r\n            height: auto;\r\n\r\n            &::before {\r\n                height: calc(100% - 61.5px) !important;\r\n            }\r\n        }\r\n    }\r\n}",
+                    "styleUrl": "./form-wrap-input.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"wrap-input\" [class.wrap-input--invalid]=\"isInvalid\" [class.wrap-input--focus]=\"isFocus\" [class.wrap-input--filled]=\"isFilled\">\r\n    <fieldset class=\"wrap-input__fieldset\">\r\n        <legend class=\"wrap-input__label\">\r\n            <ng-content select=\"[label]\"></ng-content>\r\n        </legend>\r\n        <ng-content select=\"[field]\"></ng-content>\r\n    </fieldset>\r\n    \r\n    <div class=\"wrap-input__icon\">\r\n        <ng-content select=\"[icon]\"></ng-content>\r\n    </div>\r\n    <div class=\"wrap-input__error\">\r\n        <ng-content select=\"[errors]\"></ng-content>\r\n    </div>\r\n    <div class=\"wrap-input__warning\">\r\n        <ng-content select=\"[warnings]\"></ng-content>\r\n    </div>\r\n    <div class=\"wrap-input__success\">\r\n        <ng-content select=\"[success]\"></ng-content>\r\n    </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-80dcdfca4718dc6170f7840a3b820b6c73848a03d969b0fe3303d8658a4b7410c0060825733adf1810d4436b9ca66d2ee891e689b178e96291755b4174ffd1b6",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n\n        </div>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 42,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 51,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 45,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 48,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport type { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          \n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-header {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.storybook-header svg {\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-header h1 {\n  font-weight: 700;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-header button + button {\n  margin-left: 10px;\n}\n\n.storybook-header .welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-badb6d8cee577661da79ba82ad8f599604afd40fa34e36c7b88d71d77a4fbc7184228cba2f0d73e255d0b7bc51c4c7a8e7b0128b3624aeb0255abab9030fa59a",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section class=\"storybook-page\">\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 64
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 74,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport type { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section class=\"storybook-page\">\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-page {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\n.storybook-page h2 {\n  font-weight: 700;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-page p {\n  margin: 1em 0;\n}\n\n.storybook-page a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\n.storybook-page ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\n.storybook-page li {\n  margin-bottom: 8px;\n}\n\n.storybook-page .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.storybook-page .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.storybook-page .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.storybook-page .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-5ab57971ed2a81c8c20769d6ca0ba1aa3ae0db6d20f3b82590b820364c8d3becc88cbb8a8e4c5a5d5afbcb9b5ff88cdaac0678b72f6a31a4e22e6305b10bece4",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule, isDevMode } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport {HttpClientModule, HttpClient} from '@angular/common/http';\nimport {TranslateLoader, TranslateModule} from '@ngx-translate/core';\nimport {TranslateHttpLoader} from '@ngx-translate/http-loader';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\n\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ServiceWorkerModule } from '@angular/service-worker';\nimport { SharedModule } from './shared/shared.module';\nimport { ColorDirective } from './core/directives/color.directive';\nimport { SizeDirective } from './core/directives/size.directive';\nimport { IsInvalidPipe } from './core/pipes/is-invalid.pipe';\n\nexport function createTranslateLoader(http: HttpClient) {\n  return new TranslateHttpLoader(http, './assets/i18n/', '.json');\n}\n\n@NgModule({\n  declarations: [\n    AppComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    HttpClientModule,\n    TranslateModule.forRoot({\n      loader: {\n          provide: TranslateLoader,\n          useFactory: (createTranslateLoader),\n          deps: [HttpClient]\n      }\n    }),\n    ServiceWorkerModule.register('ngsw-worker.js', {\n      enabled: !isDevMode(),\n      // Register the ServiceWorker as soon as the application is stable\n      // or after 30 seconds (whichever comes first).\n      registrationStrategy: 'registerWhenStable:30000'\n    }),\n    FormsModule,\n    ReactiveFormsModule,\n    IsInvalidPipe,\n    ColorDirective,\n    SizeDirective,\n    SharedModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "ColorDirective"
+                        },
+                        {
+                            "name": "IsInvalidPipe"
+                        },
+                        {
+                            "name": "SharedModule"
+                        },
+                        {
+                            "name": "SizeDirective"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-78922b3ae99d2c5249b333980bd5afde1b120b2cc6fedfd41b8b2cc90f279797cb4b22e183bf7e1d1dfab8c6100e77e7812c110234d81f866f544f28a3e18b15",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SharedModule",
+            "id": "module-SharedModule-2268af38b3be26de62b7ea83e19be6dcb6108217f441033a128a35a6d31df43d8823e99122bd6dd8e97bb574912932fd7d1f1a2ea66f04e134a774b18efd8c9f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/shared/shared.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { ButtonComponent } from './button/button.component';\nimport { FormInputTextComponent } from './form/form-input-text/form-input-text.component';\nimport { FormWrapInputComponent } from './form/form-wrap-input/form-wrap-input.component';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { FormSelectDropdownComponent } from './form/form-select-dropdown/form-select-dropdown.component';\nimport { CardComponent } from './card/card.component';\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    FormWrapInputComponent,\n    FormInputTextComponent,\n    FormSelectDropdownComponent,\n    CardComponent\n  ],\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n  ], \n  exports: [\n    ButtonComponent,\n    FormInputTextComponent,\n    FormSelectDropdownComponent,\n    CardComponent\n  ]\n})\nexport class SharedModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CardComponent"
+                        },
+                        {
+                            "name": "FormInputTextComponent"
+                        },
+                        {
+                            "name": "FormSelectDropdownComponent"
+                        },
+                        {
+                            "name": "FormWrapInputComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CardComponent"
+                        },
+                        {
+                            "name": "FormInputTextComponent"
+                        },
+                        {
+                            "name": "FormSelectDropdownComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "colors",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/const.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    'primary': 'primary',\r\n    'secondary': 'secondary',\r\n    'tertiary': 'tertiary',\r\n}"
+            },
+            {
+                "name": "colorsWithDefault",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/const.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    Default: undefined,\r\n    ...colors\r\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  render: (args: any) => ({\n    template: `<ef-button [EFColor]=\"theme\" [isDisabled]=\"disabled\">\n      {{content}}\n    </ef-button>`,\n    props: args\n  }),\n  args: {\n    theme: colorsWithDefault.Default,\n    content: 'My button',\n    disabled: false\n  },\n  argTypes: {\n    theme: {\n      control: 'select',\n      options: colorsWithDefault,\n      mapping: colorsWithDefault\n\n    }\n  },\n  tags: ['autodocs'],\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: any) => ({\r\n      template: `<ef-card [disabled]=\"disabled\">\r\n        hello\r\n      </ef-card>`,\r\n      props: args\r\n    }),\r\n    args: {\r\n      disabled: false\r\n    },\r\n    tags: ['autodocs'],\r\n  }"
+            },
+            {
+                "name": "Dropdown",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputText.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: any) => ({\r\n        template: `<ef-form-select-dropdown \r\n            [isInvalid]=\"isInvalid\"\r\n            [options]=\"options\"\r\n        >\r\n            <ng-container label>{{label}}</ng-container>\r\n            <ng-container errors>{{errorText}}</ng-container>\r\n            <ng-container warnings>{{warningText}}</ng-container>\r\n            <ng-container success>{{successText}}</ng-container>\r\n        </ef-form-select-dropdown>`,\r\n        props: args\r\n      }),\r\n      args: {\r\n        options: options,\r\n        isInvalid: false,\r\n        label: 'My label',\r\n        errorText: 'My error text',\r\n        warningText: 'My warning text',\r\n        successText: 'My success text',\r\n      },\r\n      tags: ['autodocs'],\r\n}"
+            },
+            {
+                "name": "Icon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  render: (args: any) => ({\n    template: `<ef-button [EFColor]=\"theme\" EFIconButton [filled]=\"filled\" [isDisabled]=\"disabled\">\n      <i class=\"ef-icon ef-icon--search\"></i>\n    </ef-button>`,\n    props: args\n  }),\n  args: {\n    theme: colorsWithDefault.Default,\n    content: 'My button',\n    disabled: false,\n    filled: true\n  },\n  argTypes: {\n    theme: {\n      control: 'select',\n      options: colorsWithDefault,\n      mapping: colorsWithDefault\n\n    }\n  },\n  tags: ['autodocs'],\n}"
+            },
+            {
+                "name": "LANGUAGES",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/core/constants/languages.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    'es': 'es',\r\n    'en': 'en'\r\n}"
+            },
+            {
+                "name": "Link",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  render: (args: any) => ({\n    template: `<ef-button [EFColor]=\"theme\" EFLinkButton [isDisabled]=\"disabled\">\n      <a href={{link}}>{{label}}</a>\n    </ef-button>`,\n    props: args\n  }),\n  args: {\n    theme: colorsWithDefault.Default,\n    label: 'My Link',\n    link: 'https://www.experienciafraternidad.com',\n    disabled: false,\n  },\n  argTypes: {\n    theme: {\n      control: 'select',\n      options: colorsWithDefault,\n      mapping: colorsWithDefault\n    }\n  },\n  tags: ['autodocs'],\n}"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = await canvas.getByRole('button', {\n      name: /Log in/i,\n    });\n    await userEvent.click(loginButton);\n  },\n}"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<Header>",
+                "defaultValue": "{\n  title: 'Example/Header',\n  component: Header,\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/angular/writing-docs/autodocs\n  tags: ['autodocs'],\n  render: (args) => ({ props: args }),\n  decorators: [\n    moduleMetadata({\n      declarations: [],\n      imports: [CommonModule],\n    }),\n  ],\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<Page>",
+                "defaultValue": "{\n  title: 'Example/Page',\n  component: Page,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [ Header],\n      imports: [CommonModule],\n    }),\n  ],\n}"
+            },
+            {
+                "name": "options",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputText.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "SelectOptionModel[]",
+                "defaultValue": "[\r\n    {\r\n        id: '1',\r\n        label: 'Option 1'\r\n    },\r\n    {\r\n        id: '2',\r\n        label: 'Option 2'\r\n    },\r\n    {\r\n        id: '3',\r\n        label: 'Option 3'\r\n    },\r\n    {\r\n        id: '4',\r\n        label: 'Option 4'\r\n    }\r\n]"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": ".storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "Text",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/InputText.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    render: (args: any) => ({\r\n        template: `<ef-form-input-text \r\n            [isInvalid]=\"isInvalid\"\r\n        >\r\n            <ng-container label>{{label}}</ng-container>\r\n            <ng-container errors>{{errorText}}</ng-container>\r\n            <ng-container warnings>{{warningText}}</ng-container>\r\n            <ng-container success>{{successText}}</ng-container>\r\n        </ef-form-input-text>`,\r\n        props: args\r\n      }),\r\n      args: {\r\n        isInvalid: false,\r\n        label: 'My label',\r\n        errorText: 'My error text',\r\n        warningText: 'My warning text',\r\n        successText: 'My success text',\r\n      },\r\n      tags: ['autodocs'],\r\n}"
+            }
+        ],
+        "functions": [
+            {
+                "name": "createTranslateLoader",
+                "file": "src/app/app.module.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        ],
+        "typealiases": [
+            {
+                "name": "EFSize",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"xsmall\" | \"small\" | \"medium\" | \"large\" | \"xlarge\"",
+                "file": "src/app/core/constants/sizes.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 189
+            },
+            {
+                "name": "EFThemePalette",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"primary\" | \"secondary\" | \"tertiary\"",
+                "file": "src/app/core/constants/colors.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 189
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<Header>",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<Page>",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/stories/const.ts": [
+                {
+                    "name": "colors",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/const.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    'primary': 'primary',\r\n    'secondary': 'secondary',\r\n    'tertiary': 'tertiary',\r\n}"
+                },
+                {
+                    "name": "colorsWithDefault",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/const.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    Default: undefined,\r\n    ...colors\r\n}"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  render: (args: any) => ({\n    template: `<ef-button [EFColor]=\"theme\" [isDisabled]=\"disabled\">\n      {{content}}\n    </ef-button>`,\n    props: args\n  }),\n  args: {\n    theme: colorsWithDefault.Default,\n    content: 'My button',\n    disabled: false\n  },\n  argTypes: {\n    theme: {\n      control: 'select',\n      options: colorsWithDefault,\n      mapping: colorsWithDefault\n\n    }\n  },\n  tags: ['autodocs'],\n}"
+                },
+                {
+                    "name": "Icon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  render: (args: any) => ({\n    template: `<ef-button [EFColor]=\"theme\" EFIconButton [filled]=\"filled\" [isDisabled]=\"disabled\">\n      <i class=\"ef-icon ef-icon--search\"></i>\n    </ef-button>`,\n    props: args\n  }),\n  args: {\n    theme: colorsWithDefault.Default,\n    content: 'My button',\n    disabled: false,\n    filled: true\n  },\n  argTypes: {\n    theme: {\n      control: 'select',\n      options: colorsWithDefault,\n      mapping: colorsWithDefault\n\n    }\n  },\n  tags: ['autodocs'],\n}"
+                },
+                {
+                    "name": "Link",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  render: (args: any) => ({\n    template: `<ef-button [EFColor]=\"theme\" EFLinkButton [isDisabled]=\"disabled\">\n      <a href={{link}}>{{label}}</a>\n    </ef-button>`,\n    props: args\n  }),\n  args: {\n    theme: colorsWithDefault.Default,\n    label: 'My Link',\n    link: 'https://www.experienciafraternidad.com',\n    disabled: false,\n  },\n  argTypes: {\n    theme: {\n      control: 'select',\n      options: colorsWithDefault,\n      mapping: colorsWithDefault\n    }\n  },\n  tags: ['autodocs'],\n}"
+                }
+            ],
+            "src/stories/Card.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: any) => ({\r\n      template: `<ef-card [disabled]=\"disabled\">\r\n        hello\r\n      </ef-card>`,\r\n      props: args\r\n    }),\r\n    args: {\r\n      disabled: false\r\n    },\r\n    tags: ['autodocs'],\r\n  }"
+                }
+            ],
+            "src/stories/InputText.stories.ts": [
+                {
+                    "name": "Dropdown",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputText.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: any) => ({\r\n        template: `<ef-form-select-dropdown \r\n            [isInvalid]=\"isInvalid\"\r\n            [options]=\"options\"\r\n        >\r\n            <ng-container label>{{label}}</ng-container>\r\n            <ng-container errors>{{errorText}}</ng-container>\r\n            <ng-container warnings>{{warningText}}</ng-container>\r\n            <ng-container success>{{successText}}</ng-container>\r\n        </ef-form-select-dropdown>`,\r\n        props: args\r\n      }),\r\n      args: {\r\n        options: options,\r\n        isInvalid: false,\r\n        label: 'My label',\r\n        errorText: 'My error text',\r\n        warningText: 'My warning text',\r\n        successText: 'My success text',\r\n      },\r\n      tags: ['autodocs'],\r\n}"
+                },
+                {
+                    "name": "options",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputText.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SelectOptionModel[]",
+                    "defaultValue": "[\r\n    {\r\n        id: '1',\r\n        label: 'Option 1'\r\n    },\r\n    {\r\n        id: '2',\r\n        label: 'Option 2'\r\n    },\r\n    {\r\n        id: '3',\r\n        label: 'Option 3'\r\n    },\r\n    {\r\n        id: '4',\r\n        label: 'Option 4'\r\n    }\r\n]"
+                },
+                {
+                    "name": "Text",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/InputText.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    render: (args: any) => ({\r\n        template: `<ef-form-input-text \r\n            [isInvalid]=\"isInvalid\"\r\n        >\r\n            <ng-container label>{{label}}</ng-container>\r\n            <ng-container errors>{{errorText}}</ng-container>\r\n            <ng-container warnings>{{warningText}}</ng-container>\r\n            <ng-container success>{{successText}}</ng-container>\r\n        </ef-form-input-text>`,\r\n        props: args\r\n      }),\r\n      args: {\r\n        isInvalid: false,\r\n        label: 'My label',\r\n        errorText: 'My error text',\r\n        warningText: 'My warning text',\r\n        successText: 'My success text',\r\n      },\r\n      tags: ['autodocs'],\r\n}"
+                }
+            ],
+            "src/app/core/constants/languages.ts": [
+                {
+                    "name": "LANGUAGES",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/core/constants/languages.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    'es': 'es',\r\n    'en': 'en'\r\n}"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<Header>",
+                    "defaultValue": "{\n  title: 'Example/Header',\n  component: Header,\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/angular/writing-docs/autodocs\n  tags: ['autodocs'],\n  render: (args) => ({ props: args }),\n  decorators: [\n    moduleMetadata({\n      declarations: [],\n      imports: [CommonModule],\n    }),\n  ],\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = await canvas.getByRole('button', {\n      name: /Log in/i,\n    });\n    await userEvent.click(loginButton);\n  },\n}"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<Page>",
+                    "defaultValue": "{\n  title: 'Example/Page',\n  component: Page,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [ Header],\n      imports: [CommonModule],\n    }),\n  ],\n}"
+                }
+            ],
+            ".storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": ".storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {
+            "src/app/app.module.ts": [
+                {
+                    "name": "createTranslateLoader",
+                    "file": "src/app/app.module.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "args": [
+                        {
+                            "name": "http",
+                            "type": "HttpClient",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "http",
+                            "type": "HttpClient",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "src/app/core/constants/sizes.ts": [
+                {
+                    "name": "EFSize",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"xsmall\" | \"small\" | \"medium\" | \"large\" | \"xlarge\"",
+                    "file": "src/app/core/constants/sizes.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 189
+                }
+            ],
+            "src/app/core/constants/colors.ts": [
+                {
+                    "name": "EFThemePalette",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"primary\" | \"secondary\" | \"tertiary\"",
+                    "file": "src/app/core/constants/colors.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 189
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<Header>",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<Page>",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
+            ]
+        }
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": ".storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.module.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "createTranslateLoader",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/constants/colors.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "CanChangeColor",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/constants/languages.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LANGUAGES",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/constants/sizes.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "CanChangeSize",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/directives/color.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "ColorDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/directives/icon-button.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "IconButtonDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/directives/link-button.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "LinkButtonDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/directives/size.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "SizeDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/models/select-option.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "SelectOptionModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/pipes/is-invalid.pipe.ts",
+                "type": "pipe",
+                "linktype": "pipe",
+                "name": "IsInvalidPipe",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/card/card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/form/form-input-text/form-input-text.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FormInputTextComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/27",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/form/form-select-dropdown/form-select-dropdown.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FormSelectDropdownComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/24",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/form/form-wrap-input/form-wrap-input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FormWrapInputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Icon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Link",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputText.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Dropdown",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputText.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "options",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/InputText.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Text",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/const.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "colors",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/const.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "colorsWithDefault",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            }
+        ]
+    }
+}

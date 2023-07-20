@@ -1,0 +1,398 @@
+@mixin set-button-color($background-color, $stroke, $color, $drop-shadow) {
+    .ef-button-elements {
+        filter: $drop-shadow;
+        stroke: $background-color;
+    }
+
+    .ef-button-outer {
+        fill: $background-color;
+        filter: $drop-shadow;
+    }
+
+    .ef-button-inner {
+        fill: $background-color;
+        stroke: $stroke;
+    }
+
+    .ef-button-content {
+        color: $color;
+    }
+}
+
+.ef-button {
+    $color-primary: var(--color-primary);
+    $color-light-primary: var(--color-light-primary);
+    $color-dark-primary: var(--color-dark-primary);
+    $color-secondary: var(--color-secondary);
+    $color-light-secondary: var(--color-light-secondary);
+    $color-dark-secondary: var(--color-dark-secondary);
+    $color-tertiary: var(--color-tertiary);
+    $color-light-tertiary: var(--color-light-tertiary);
+    $color-dark-tertiary: var(--color-dark-tertiary);
+    $color-black: var(--color-black);
+    $color-white: var(--color-white);
+    $color-light-white: var(--color-light-white);
+    $color-dark-white: var(--color-dark-white);
+    $color-gray: var(--color-gray);
+    $drop-shadow: var(--drop-shadow);
+    $button-opacity: var(--button-opacity);
+
+    position: relative;
+    width: 300px;
+    height: 90px;
+    display: block;
+    transition: var(--transition-bezier);
+
+    &.ef-icon-button:not(.ef-button-filled) {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ef-icon {
+            background-color: var(--color-white);
+        }
+
+        &:not(.ef-button-disabled) {
+            &:hover {
+                cursor: pointer;
+                .ef-icon {
+                    background-color: var(--color-white);
+                }
+    
+                .ef-button-content {
+                    border-bottom: 2px solid var(--color-white);
+                }
+            }
+    
+            &:active, &:focus {
+                cursor: pointer;
+                .ef-icon {
+                    background-color: var(--color-dark-white);
+                }
+    
+                .ef-button-content {
+                    border-bottom: 2px solid var(--color-dark-white);
+                }
+            }
+        }
+
+        &.ef-button-disabled {
+            opacity: var(--button-opacity);
+        }
+
+
+        .ef-button-content {
+            width: 40px;
+            top: 0;
+            left: 0;
+            transform: none;
+            position: relative; 
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    &.ef-icon-button.ef-button-filled {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ef-icon {
+            background-color: var(--color-white);
+        }
+
+        &:not(.ef-button-disabled):not(.ef-button-primary):not(.ef-button-secondary):not(.ef-button-tertiary) {
+            &:hover {
+                cursor: pointer;
+                .ef-icon {
+                    background-color: var(--color-white);
+                }
+            }
+    
+            &:active, &:focus {
+                cursor: pointer;
+                .ef-icon {
+                    background-color: var(--color-dark-white);
+                }
+    
+                .ef-button-content {
+                    border-bottom: 2px solid var(--color-dark-white);
+                }
+            }
+        }
+
+        &.ef-button-disabled {
+            opacity: var(--button-opacity);
+        }
+
+        &.ef-button-primary {
+            background-color: var(--color-primary);
+            border: 1px solid var(--color-white);
+
+            &:not(.ef-button-disabled) {
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--color-light-primary);
+                }
+        
+                &:active, &:focus {
+                    cursor: pointer;
+                    background-color: var(--color-dark-primary);
+                }
+            }
+
+            &.ef-button-disabled {
+                opacity: var(--button-opacity);
+            }
+           
+        }
+        &.ef-button-secondary {
+            background-color: var(--color-secondary);
+            border: 1px solid var(--color-tertiary);
+            &:not(.ef-button-disabled) {
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--color-light-secondary);
+                }
+        
+                &:active, &:focus {
+                    cursor: pointer;
+                    background-color: var(--color-dark-secondary);
+                }
+            }
+            &.ef-button-disabled {
+                opacity: var(--button-opacity);
+            }
+        }
+        &.ef-button-tertiary {
+            background-color: var(--color-tertiary);
+            border: 1px solid var(--color-secondary);
+            &:not(.ef-button-disabled) {
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--color-light-tertiary);
+                }
+        
+                &:active, &:focus {
+                    cursor: pointer;
+                    background-color: var(--color-dark-tertiary);
+                }
+            }
+            &.ef-button-disabled {
+                opacity: var(--button-opacity);
+            }
+        }
+
+        .ef-button-content {
+            width: 40px;
+            top: 0;
+            left: 0;
+            transform: none;
+            position: relative; 
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    &:not(.ef-button-primary):not(.ef-button-secondary):not(.ef-button-tertiary) {
+        @include set-button-color($color-white, $color-primary, $color-black, $drop-shadow);
+
+        &:not(.ef-button-disabled) {
+            &:hover {
+                cursor: pointer;
+                @include set-button-color($color-light-white, $color-primary, $color-black, $drop-shadow);
+            }
+    
+            &:active, &:focus {
+                @include set-button-color($color-dark-white, $color-primary, $color-black, $drop-shadow);
+            }
+        }
+
+        &.ef-button-disabled {
+            opacity: var(--button-opacity);
+            cursor: not-allowed;
+        }
+    }
+
+    &.ef-link-button {
+        width: fit-content;
+        height: auto;
+
+        &:not(.ef-button-primary):not(.ef-button-secondary):not(.ef-button-tertiary) {
+            &:not(.ef-button-disabled) a {
+                color: var(--color-white);
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+            }
+
+            &.ef-button-disabled a {
+                color: var(--color-white);
+                opacity: var(--button-opacity);
+                cursor: none;
+            }
+        }
+
+        &.ef-button-primary {
+            &:not(.ef-button-disabled) a {
+                color: var(--color-primary);
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: var(--color-light-primary);
+                }
+
+                &:active, &:focus {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: var(--color-dark-primary);
+                }
+            }
+
+            &.ef-button-disabled a {
+                color: var(--color-primary);
+                cursor: none;
+                opacity: var(--button-opacity);
+            }
+
+        }
+
+        &.ef-button-secondary {
+            &:not(.ef-button-disabled) a {
+                color: var(--color-secondary);
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: var(--color-light-secondary);
+                }
+
+                &:active, &:focus {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: var(--color-dark-secondary);
+                }
+            }
+
+            &.ef-button-disabled a {
+                color: var(--color-secondary);
+                cursor: none;
+                opacity: var(--button-opacity);
+            }
+
+        }
+
+        &.ef-button-tertiary {
+            &:not(.ef-button-disabled) a {
+                color: var(--color-tertiary);
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: var(--color-light-tertiary);
+                }
+
+                &:active, &:focus {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: var(--color-dark-tertiary);
+                }
+            }
+
+            &.ef-button-disabled a {
+                color: var(--color-tertiary);
+                cursor: none;
+                opacity: var(--button-opacity);
+            }
+
+        }
+
+        .ef-button-content {
+            width: fit-content;
+            top: 0;
+            left: 0;
+            transform: none;
+            position: relative; 
+            font-size: var(--font-size-md);
+        }
+
+        svg {
+            display: none;
+        }
+    }
+    
+    &-primary {
+        @include set-button-color($color-primary, $color-white, $color-white, $drop-shadow);
+        &:not(.ef-button-disabled) {
+            &:hover {
+                cursor: pointer;
+                @include set-button-color($color-light-primary, $color-white, $color-white, $drop-shadow);
+            }
+            &:active, &:focus {
+                @include set-button-color($color-dark-primary, $color-white, $color-white, $drop-shadow);
+            }
+        }
+        &.ef-button-disabled {
+            opacity: var(--button-opacity);
+            cursor: not-allowed;
+        }
+    }
+
+    &-secondary {
+        @include set-button-color($color-secondary, $color-tertiary, $color-black, $drop-shadow);
+        &:not(.ef-button-disabled) {
+
+            &:hover {
+                cursor: pointer;
+                @include set-button-color($color-light-secondary, $color-tertiary, $color-black, $drop-shadow);
+            }
+            &:active, &:focus {
+                @include set-button-color($color-dark-secondary, $color-tertiary, $color-black, $drop-shadow);
+            }
+        }
+        &.ef-button-disabled {
+            opacity: var(--button-opacity);
+            cursor: not-allowed;
+        }
+    }
+
+    &-tertiary {
+        @include set-button-color($color-tertiary, $color-secondary, $color-white, $drop-shadow);
+        &:not(.ef-button-disabled) {
+            &:hover {
+                cursor: pointer;
+                @include set-button-color($color-light-tertiary, $color-secondary, $color-white, $drop-shadow);
+            }
+            &:active, &:focus {
+                @include set-button-color($color-dark-tertiary, $color-secondary, $color-white, $drop-shadow);
+            }
+        }
+        &.ef-button-disabled {
+            opacity: var(--button-opacity);
+            cursor: not-allowed;
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: var(--font-size-lg);
+    }
+}
