@@ -1,12 +1,12 @@
 <div class="ef-nav-bar-menu">
     
-    <img class="ef-nav-bar-menu-logo" [class.active]="showMenu" src="/assets/icons/logo.png" width="100px" (click)="showMenu = !showMenu">
+    <img class="ef-nav-bar-menu-logo" [class.active]="showMenu" src="./assets/icons/logo.png" width="100px" (click)="showMenu = !showMenu">
     
 </div>
 <div class="ef-nav-bar-menu">
     <div class="ef-nav-bar-menu-items" [class.active]="showMenu">
 
-        <img src="/assets/images/menu.png" width="100%">
+        <img src="./assets/images/menu.png" width="100%">
         <ul>
             <li class="ef-nav-bar-menu-items--item" *ngFor="let item of items">
                 <a [href]="item.url">{{item.label | translate}}</a>
