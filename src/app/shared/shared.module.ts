@@ -6,6 +6,7 @@ import { FormWrapInputComponent } from './form/form-wrap-input/form-wrap-input.c
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormSelectDropdownComponent } from './form/form-select-dropdown/form-select-dropdown.component';
 import { CardComponent } from './card/card.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { CardComponent } from './card/card.component';
     FormWrapInputComponent,
     FormInputTextComponent,
     FormSelectDropdownComponent,
-    CardComponent
+    CardComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { CardComponent } from './card/card.component';
     ButtonComponent,
     FormInputTextComponent,
     FormSelectDropdownComponent,
-    CardComponent
+    CardComponent,
+    SliderComponent
   ]
 })
 export class SharedModule { }

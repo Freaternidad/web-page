@@ -13,6 +13,7 @@ import { SharedModule } from './shared/shared.module';
 import { ColorDirective } from './core/directives/color.directive';
 import { SizeDirective } from './core/directives/size.directive';
 import { IsInvalidPipe } from './core/pipes/is-invalid.pipe';
+import { ComponentsModule } from './components/components.module';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -44,7 +45,8 @@ export function createTranslateLoader(http: HttpClient) {
     IsInvalidPipe,
     ColorDirective,
     SizeDirective,
-    SharedModule
+    SharedModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

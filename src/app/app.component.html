@@ -1,13 +1,10 @@
-<ef-button [EFColor]="'primary'" [EFSize]="'medium'" >
-    My button
-</ef-button>
-<ef-form-input-text 
-    [formControl]="inputValue"
-    [isInvalid]="(inputValue | isInvalid)"
->
-    <ng-container label>My Input</ng-container>
-    <ng-container errors>My error text</ng-container>
-    <ng-container warnings>My warning text</ng-container>
-    <ng-container success>My success text</ng-container>
-</ef-form-input-text>
-<router-outlet></router-outlet>
+<ef-nav-bar [items]="navItems"></ef-nav-bar>
+<div class="ef-app" id="app">
+    <div class="ef-app-container">
+        <router-outlet></router-outlet>
+    </div> 
+    
+</div>
+
+
+<ef-footer></ef-footer>

@@ -21,6 +21,10 @@
   --color-dark-white: #8B8B8B;
   --color-light-white: #CACACA;
 
+  // alphas
+  --color-black-alpha-30: rgba(23, 23, 31, 0.3);
+  --color-tertiary-alpha-50: rgba(28, 54, 86, 0.5);
+
   // Opacities
   --button-opacity: 0.6;
 
@@ -47,6 +51,7 @@
   --font-family-paragraph-italic: 'Besley Italic';
 
   --drop-shadow: drop-shadow(0px 5.7140045166015625px 5.7140045166015625px rgba(0, 0, 0, 0.25));
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 
   --transition-bezier: all 0.15s cubic-bezier(0.17, 0.67, 0.8, 0.62);
 
@@ -82,11 +87,13 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #525356;;
+    background-color: #525356;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {
     font-family: var(--font-family-title);
+    margin: 0;
 }
 
 div, span, p {
@@ -136,6 +143,22 @@ i.ef-icon {
 
     &--arrow {
         mask-image: url(../src/assets/icons/arrow.svg);
+    }
+
+    &--facebook {
+        mask-image: url(../src/assets/icons/facebook.svg);
+    }
+
+    &--instagram {
+        mask-image: url(../src/assets/icons/instagram.svg);
+    }
+
+    &--whatsapp {
+        mask-image: url(../src/assets/icons/whatsapp.svg);
+    }
+
+    &--scroll {
+        mask-image: url(../src/assets/icons/scroll.svg);
     }
 }
 
