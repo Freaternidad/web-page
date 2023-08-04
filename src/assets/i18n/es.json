@@ -1,3 +1,35 @@
 {
-    "title": "Experiencia Fraternidad"
+    "title": "Experiencia Fraternidad",
+    "address": "<h4>Cra <b>63</b>b # <b>73</b> sur <b>- 126, </b>La Estrella, Antioquia</h4>",
+    "email": "experienciafraternidad@gmail.com",
+    "phone": "+573188251017",
+    "footer": {
+        "text": "Unirse a esta experiencia  sin duda le proporcionará momentos gratificantes, recuerdos entrañables y una red de personas notables que se convertirán en sus aliados para toda la vida. Creemos que usted posee las cualidades y el potencial para prosperar dentro de nuestra Fraternidad, y queremos extenderle esta invitación..."
+    },
+    "home": {
+        "info": "Vivir la Experiencia Fraternidad es ser parte de una comunidad que <strong><em>fomenta habilidades de liderazgo</em></strong> y proporciona a sus miembros amplias oportunidades de crecimiento y para tener un impacto positivo en la sociedad.",
+        "info2": "A través de nuestros diversos convenios con aliados, de los esfuerzos filantrópicos, programas de tutorías e iniciativas de servicio a la comunidad, nuestro objetivo es <strong><em>cultivar un fuerte sentido de pertenencia</em></strong> de nuestros miembros con sus proyectos de vida y sus roles como líderes en la sociedad, y al mismo tiempo brindar un sinnúmero de beneficios como descuentos y acompañamientos especializados en procesos académicos.",
+        "info3": "Reconocemos la importancia de  <strong><em>mantener un equilibrio entre las actividades académicas y aquellas que son extra-curriculares.</strong></em> Como miembro, tendrás acceso a una red de personas motivadas que pueden proporcionarte apoyo académico, compartir recursos de estudio y fomentar tu crecimiento intelectual y personal.",
+        "partners": {
+            "title": "Aliados",
+            "info": "Ser miembro de una Fraternidad es poder <strong><em>disfrutar de beneficios como descuentos, atención preferencial y acceso a productos y servicios exclusivos.</em></strong><br/><br/>Aprovecha todos nuestros convenios y pregunta sobre todos los beneficios de vivir la <strong><em>Experiencia Fraternidad.</em></strong><br/>",
+            "button": "!Descubrelos¡"
+        },
+        "membership": {
+            "title": "Tarjeta de Membresía",
+            "text": "Vivir esta Experiencia es <strong><em>sentirse identificado y parte de un club lleno de beneficios.</em></strong><br/><br/>Cada miembro de nuestra Fraternidad tiene una tarjeta que le permite acceder a toda nuestra red de aliados y convenios exclusivos para clientes.<br/>Las tarjetas son personalizadas de acuerdo a la Experiencia, y todas tienen el nombre y código del beneficiario, para fácil acceso a todos nuestros servicios."
+        },
+        "customers": {
+            "title": "...Ellos ya lo vivieron."
+        }
+    },
+    "navbar": {
+        "login": "Iniciar Sesión",
+        "items": {
+            "home": "Inicio",
+            "memberships": "Membresías",
+            "partners": "Aliados",
+            "contact": "Contacto"
+        }
+    }
 }

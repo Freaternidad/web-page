@@ -1,0 +1,128 @@
+@use 'sass:math';
+.ef-who {
+    height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+    grid-area: about;
+
+    &-slide {
+        padding: 0 2%;
+        box-sizing: border-box;
+
+        &-line {
+            width: 150px;
+            height: 70vh;
+            background: transparent;
+            position: absolute;
+            right: 20%;
+            top: 50%;
+            transform: translate(0%, -50%);
+            z-index: 0;
+            backdrop-filter: blur(7px);
+        }
+    }
+
+    .container {
+        display: flex;
+        width: fit-content;
+    }
+
+
+    &-slide-one {
+        width: 150vw;
+        height: 100vh;
+        background-image: url(../../../../../assets/images/highlight.png);
+        background-repeat: no-repeat;
+        background-position-x: 55%;
+        background-size: 55% 100%;
+        grid-template-columns: 35% 33% 1% 30% 1%;
+        grid-template-rows: auto;
+        grid-template-areas: 'title image . info .';
+        display: grid;
+        float: left;
+        position: relative;
+
+        &--title {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            grid-area: title;
+    
+            h1 {
+                line-height: normal;
+                text-align: center;
+                font-size: 96px;
+            }
+    
+            & > * {
+                color: var(--color-white);
+            }
+        }
+
+        &--info {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            grid-area: info;
+
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+            z-index: 1;
+
+            p {
+                span {
+                    display: inline-block;
+                    opacity: 0;
+                    filter: blur(4px);
+                }
+
+                &.visible {
+                    @for $item from 1 through 140 {
+                        span:nth-of-type(#{$item}){ 
+                            $time: math.div($item,10) + 0.0s;
+                            animation: fade-in 0.5s $time forwards cubic-bezier(0.11, 0, 0.5, 0);
+                        }
+                    }
+                }
+    
+                
+            }
+    
+            h1 {
+                line-height: normal;
+                font-size: 96px;
+            }
+    
+            & > * {
+                color: var(--color-white);
+            }
+        }
+    
+        &--image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: image;
+
+            .ef-flags {
+                min-width: 60%;
+                max-width: 100%;
+                transition: all linear 0.7s;
+            }
+        }
+    }
+
+}
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }

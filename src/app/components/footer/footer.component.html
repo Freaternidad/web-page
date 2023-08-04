@@ -1,0 +1,74 @@
+<div id="stand">
+    <img  class="ef-footer-stand" src="/assets/images/stand.png" width="350px" alt="{{'title' | translate}}" data-depth="0.2"/>
+</div>
+<footer >
+    <div class="ef-footer-data" id="data">
+        <a href="{{ 'mailto:' + ('email' | translate)}}" >
+            <h2>
+                {{'email' | translate}}
+            </h2>
+        </a>
+        <div >
+            <h4 >
+                Celular:  <a href="{{'tel:' + ('phone' | translate)}}"><b [innerHtml]="'phone' | translate"></b></a>
+            </h4>
+        </div>
+        <div >
+            <h4 [innerHtml]="'address' | translate"></h4>
+        </div>
+       
+    </div>
+    <div class="ef-footer-info" id="info">
+        <h2>{{'title' | translate}}</h2>
+        <div class="container">
+            <p class="mainAlt">{{'footer.text' | translate}}</p>
+            <p class="main" EFHighlight>{{'footer.text' | translate}}</p>
+        </div>
+        
+
+    </div>
+    <div class="ef-footer-social" id="social" >
+        <a href="#">
+            <img height="150px" src="/assets/images/facebook.png">
+        </a>
+        <a href="#">
+            <img height="150px" src="/assets/images/instagram.png">
+        </a>
+        <a href="#">
+            <img height="150px" src="/assets/images/whatsapp.png">
+        </a>
+    </div>
+    
+    <div class="ef-footer-politics" id="politics" >
+        <span>
+            <strong>
+                Trabaje con nosotros
+            </strong>
+        </span>
+            <span>
+            <strong>
+                Politica de privacidad
+            </strong>
+        </span>
+        <span>
+            <strong>
+                Términos y condiciones
+            </strong>
+        </span>
+        <span>
+            <strong>
+                Nuestros aliados
+            </strong>
+        </span>
+        <span>
+            <strong>
+                Programa miembro Ad Honorem
+            </strong>
+        </span>
+        <span>
+            <strong>
+                Contactanos
+            </strong>
+        </span>
+    </div>
+</footer>
