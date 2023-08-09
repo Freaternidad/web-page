@@ -20,7 +20,8 @@
             "text": "Vivir esta Experiencia es <strong><em>sentirse identificado y parte de un club lleno de beneficios.</em></strong><br/><br/>Cada miembro de nuestra Fraternidad tiene una tarjeta que le permite acceder a toda nuestra red de aliados y convenios exclusivos para clientes.<br/>Las tarjetas son personalizadas de acuerdo a la Experiencia, y todas tienen el nombre y código del beneficiario, para fácil acceso a todos nuestros servicios."
         },
         "customers": {
-            "title": "...Ellos ya lo vivieron."
+            "title": "...Ellos ya lo vivieron.",
+            "banner": "VIVE LA EXPERIENCIA"
         }
     },
     "navbar": {
