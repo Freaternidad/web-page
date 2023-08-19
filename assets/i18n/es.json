@@ -32,5 +32,11 @@
             "partners": "Aliados",
             "contact": "Contacto"
         }
+    },
+    "contact": {
+        "flags": "¡Estás list@ para vivir la Experiencia Fraternidad!",
+        "envelope": "Espera nuestra carta especial de invitación que llega directamente a tu colegio",
+        "letter": "En una carta, cuéntanos por qué quieres vivir esta Experiencia y envíala a nuestro Whatsapp",
+        "social": "Síguenos en nuestras redes sociales, nosotros te contactaremos para que seas parte de este grupo exclusivo"
     }
 }
