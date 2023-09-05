@@ -28,7 +28,12 @@
         "login": "Iniciar Sesión",
         "items": {
             "home": "Inicio",
-            "memberships": "Membresías",
+            "memberships": {
+                "title": "Membresías", 
+                "alpha": "Alpha", 
+                "omega": "Omega",
+                "beta": "Beta"
+            },
             "partners": "Aliados",
             "contact": "Contacto"
         }
@@ -38,5 +43,48 @@
         "envelope": "Espera nuestra carta especial de invitación que llega directamente a tu colegio",
         "letter": "En una carta, cuéntanos por qué quieres vivir esta Experiencia y envíala a nuestro Whatsapp",
         "social": "Síguenos en nuestras redes sociales, nosotros te contactaremos para que seas parte de este grupo exclusivo"
+    },
+    "memberships": {
+        "alpha": {
+            "mainPhrase": "¡La experiencia más completa <br/><span> de Nuestras Membresias!</span>",
+            "title": "Experiencia Alpha",
+            "description": "Es la experiencia más completa de nuestras membresias; el kit VIP de bienvenida <strong>incluye dos chaquetas (o una doble faz), en la que podrán elegir hasta cinco colores de tela diferentes; bordados, estampados y parches ilimitados; y un artículo personalizado del catálogo que esté disponible al momento de la bienvenida.</strong><br><br>Los estudiantes que eligen esta experiencia, la entrega del kit de bienvenida es un evento VIP, en el que se incluye una sesión fotográfica profesional y una base de fotografía 360° para que las fotos y videos sean inolvidables.",
+            "welcome": {
+                "title": "Con el kit de bienvenida,<br/> <strong>Alpha Vip</strong> recibirás <i>2</i><br> articulos personalizados",
+                "article": "Articulo extra de nuestra tienda de personalizados"
+            },
+            "card": "Los miembros que vivan esta experiencia tienen derecho a la tarjeta Alpha VIP, con la que tendrán acceso a todas las ofertas de las marcas aliadas del portafolio"
+        },
+        "omega": {
+            "mainPhrase": "¡La experiencia más popular <br/><span> de Nuestras Membresias!</span>",
+            "title": "Experiencia Omega",
+            "description": "La experiencia Omega PREMIUM es la segunda experiencia en lista; el kit VIP de bienvenida <strong>incluye una chaqueta doble faz, en la que podrán elegir hasta cinco colores de tela diferentes; bordados, estampados y parches ilimitados; y un artículo personalizado del catálogo que esté disponible al momento de la bienvenida</strong><br><br>Los estudiantes que eligen esta experiencia, la entrega del kit de bienvenida es un evento Omega, en el que se incluye una sesión fotográfica profesional",
+            "welcome": {
+                "title": "Con el kit de bienvenida,<br/> <strong>Omega Premium</strong> recibirás <i>2</i><br> articulos personalizados",
+                "article": "Articulo extra de nuestra tienda de personalizados"
+            },
+            "card": "Los miembros que vivan esta experiencia tienen derecho a la tarjeta Omega Premium, con la que tendrán acceso a la mayoría de las ofertas de las marcas aliadas del portafolio"
+        },
+        "beta": {
+            "mainPhrase": "¡La experiencia inicial <br/><span> de Nuestras Membresias!</span>",
+            "title": "Experiencia Beta",
+            "description": "La experiencia Beta STARTER es la tercera experiencia en lista; el kit VIP de bienvenida <strong>incluye una chaqueta sencilla, en la que podrán elegir hasta cinco colores de tela diferentes; bordados, estampados y parches ilimitados</strong>",
+            "welcome": {
+                "title": "Con el kit de bienvenida,<br/> <strong>Beta Starter</strong> recibirás <i>1</i><br> articulo personalizado",
+                "article": ""
+            },
+            "card": "Los miembros que vivan esta experiencia tienen derecho a la tarjeta Beta Premium, con la que tendrán acceso a algunas de las ofertas de las marcas aliadas del portafolio"
+        },
+        "materials": {
+            "title": "Conoce nuestros materiales",
+            "fabrics": "Telas y Forros",
+            "embroideries": "Bordados y Apliques",
+            "ornaments": "Adornos"
+        },
+        "welcome": {
+            "package": "Tula con diseño y color personalizado",
+            "card": "Tarjeta de Membresía"
+        }
+
     }
 }
