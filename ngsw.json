@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1693884081390,
+  "timestamp": 1693886921940,
   "index": "https://freaternidad.github.io/web-page/index.html",
   "assetGroups": [
     {
@@ -13,13 +13,13 @@
       "urls": [
         "https://freaternidad.github.io/web-page/194.3413dadf278263ea.js",
         "https://freaternidad.github.io/web-page/612.ae021ed4fc567712.js",
-        "https://freaternidad.github.io/web-page/653.dc62c388d1c6a012.js",
+        "https://freaternidad.github.io/web-page/653.a2e7d652717f58dd.js",
         "https://freaternidad.github.io/web-page/favicon.ico",
         "https://freaternidad.github.io/web-page/index.html",
         "https://freaternidad.github.io/web-page/main.da1e6a145414c19e.js",
         "https://freaternidad.github.io/web-page/manifest.webmanifest",
         "https://freaternidad.github.io/web-page/polyfills.d2c62ca794b5796a.js",
-        "https://freaternidad.github.io/web-page/runtime.bad6fcb4b942c8c9.js",
+        "https://freaternidad.github.io/web-page/runtime.c62c52de1966d714.js",
         "https://freaternidad.github.io/web-page/styles.ff23eaac71affa4c.css"
       ],
       "patterns": []
@@ -160,7 +160,7 @@
     "https://freaternidad.github.io/web-page/194.3413dadf278263ea.js": "9692d12314aeee98361820e25700bd8602821aa9",
     "https://freaternidad.github.io/web-page/2020.eb7f670b93deb285.jpg": "6387fb4bb4130b6fda60b5e079e981ca4aade066",
     "https://freaternidad.github.io/web-page/612.ae021ed4fc567712.js": "bea1e1600415e868976e20b652347597550f52db",
-    "https://freaternidad.github.io/web-page/653.dc62c388d1c6a012.js": "aa4974b072e529b2fa2b5d5366a8d64d02e19bdc",
+    "https://freaternidad.github.io/web-page/653.a2e7d652717f58dd.js": "548732af8ff5511198ae51bd1c6b49a617b98aa8",
     "https://freaternidad.github.io/web-page/BU4.a8ac6b34e7125718.jpg": "22f59bdc82d0c87b3106ccb35bf37d750700e38b",
     "https://freaternidad.github.io/web-page/Besley-Italic-VariableFont_wght.0dac4fb5e91db0d1.ttf": "607bd85d59a4da8b2b23fe1fa30f2cdb9ab71885",
     "https://freaternidad.github.io/web-page/Besley-VariableFont_wght.4a82c8d57f9f5183.ttf": "8545bb668a8b08b3d96f1e205ada07aedbb5f68c",
@@ -270,7 +270,7 @@
     "https://freaternidad.github.io/web-page/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "https://freaternidad.github.io/web-page/fondo.33c885833a9a5752.png": "bc6665d2e01c6dfaec86b7b1b48fd08b9f9113db",
     "https://freaternidad.github.io/web-page/highlight.c2f377b66cc8d4b5.png": "7568113156a7b1a5ac459ffed5fa86d958507b53",
-    "https://freaternidad.github.io/web-page/index.html": "aff6d5729902e72151007cf9a48c0edcdb23e2bf",
+    "https://freaternidad.github.io/web-page/index.html": "94d62213a2a601b4afb758d8c638adad602a3f3b",
     "https://freaternidad.github.io/web-page/instagram.23bf3cb44b2952ce.svg": "fbbdf01269922dd74ba66ce3a26f104021822160",
     "https://freaternidad.github.io/web-page/invasores.738b2d6f8006be7f.jpg": "9bc957fa134af45d9f7412bc3e505a3d29d9926d",
     "https://freaternidad.github.io/web-page/list-alpha.72f96572e1aaf0e6.png": "71ad70980d49750597ac076ccc6f81c24abbd619",
@@ -279,7 +279,7 @@
     "https://freaternidad.github.io/web-page/main.da1e6a145414c19e.js": "e00772afb1032bf61a2ec3bd3176464ef79928e7",
     "https://freaternidad.github.io/web-page/manifest.webmanifest": "195e8dcccfa66fc1eb415ded0a89de1a2cbf7b48",
     "https://freaternidad.github.io/web-page/polyfills.d2c62ca794b5796a.js": "9a4878972295a5317d88f257d0077e38f96639b6",
-    "https://freaternidad.github.io/web-page/runtime.bad6fcb4b942c8c9.js": "a5e51a80fa9822bd470c43185bf2829e3ae7c565",
+    "https://freaternidad.github.io/web-page/runtime.c62c52de1966d714.js": "cb49b1e96c90b5351abc9f8c86ede3221f0d7fe0",
     "https://freaternidad.github.io/web-page/scroll.4f348761f181d7ac.svg": "c02d2d23da524c6a8260045bf8fa9d2d0dd2c535",
     "https://freaternidad.github.io/web-page/search.219dcd5a050a37fa.svg": "77dd0c3052098ed5386c2eed2bb90ac84b2ac518",
     "https://freaternidad.github.io/web-page/separator.96728046f32232aa.svg": "14e6835f4ece2f5fb64a14eb6fc9c882cb2c5b30",
