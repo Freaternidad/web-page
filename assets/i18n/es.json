@@ -85,6 +85,16 @@
             "package": "Tula con diseño y color personalizado",
             "card": "Tarjeta de Membresía"
         }
-
+    },
+    "partners": {
+        "title": "Conexiones que<br> impulsan logros",
+        "description": "Aquí encontrarás todo el <strong>portafolio de marcas aliadas</strong> que se encuentran activas. Cada una de ellas ha diseñado una oferta diferente para miembros Alpha, Omega y Beta, y otras han creado una misma oferta para todos los miembros de la Experiencia Fraternidad, lee muy bien toda la información de cada aliado.",
+        "category": {
+            "all": "Todas",
+            "beauty": "Belleza",
+            "health": "Salud",
+            "services": "Servicios"
+        },
+        "getMore": "Ver más"
     }
 }
