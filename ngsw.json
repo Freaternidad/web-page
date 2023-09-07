@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1694059645746,
+  "timestamp": 1694060921070,
   "index": "https://freaternidad.github.io/web-page/index.html",
   "assetGroups": [
     {
@@ -18,7 +18,7 @@
         "https://freaternidad.github.io/web-page/common.d04cd029e2aa53f2.js",
         "https://freaternidad.github.io/web-page/favicon.ico",
         "https://freaternidad.github.io/web-page/index.html",
-        "https://freaternidad.github.io/web-page/main.d686cf60e437dd33.js",
+        "https://freaternidad.github.io/web-page/main.559ce0abbe425664.js",
         "https://freaternidad.github.io/web-page/manifest.webmanifest",
         "https://freaternidad.github.io/web-page/polyfills.d2c62ca794b5796a.js",
         "https://freaternidad.github.io/web-page/runtime.844c4410b1f78fbf.js",
@@ -296,13 +296,13 @@
     "https://freaternidad.github.io/web-page/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "https://freaternidad.github.io/web-page/fondo.33c885833a9a5752.png": "bc6665d2e01c6dfaec86b7b1b48fd08b9f9113db",
     "https://freaternidad.github.io/web-page/highlight.c2f377b66cc8d4b5.png": "7568113156a7b1a5ac459ffed5fa86d958507b53",
-    "https://freaternidad.github.io/web-page/index.html": "f0a926f85aaee213d3efccbce036ea054e9c7946",
+    "https://freaternidad.github.io/web-page/index.html": "8f93cb1263ea6fe0d5a03176617e39642964617b",
     "https://freaternidad.github.io/web-page/instagram.23bf3cb44b2952ce.svg": "fbbdf01269922dd74ba66ce3a26f104021822160",
     "https://freaternidad.github.io/web-page/invasores.738b2d6f8006be7f.jpg": "9bc957fa134af45d9f7412bc3e505a3d29d9926d",
     "https://freaternidad.github.io/web-page/list-alpha.72f96572e1aaf0e6.png": "71ad70980d49750597ac076ccc6f81c24abbd619",
     "https://freaternidad.github.io/web-page/list-beta.53583e84f545c22e.png": "92d61161dbf6f49ef6688a48da4c7baf13806c2d",
     "https://freaternidad.github.io/web-page/list-omega.78f01b3678bba49b.png": "42a9a85185af20c5dde81d67ea94809d72d40b2e",
-    "https://freaternidad.github.io/web-page/main.d686cf60e437dd33.js": "d3fd9e530097a7cf1f7e76507a23acf4cae2bf31",
+    "https://freaternidad.github.io/web-page/main.559ce0abbe425664.js": "0040295aa665b24a74b00c1907bb2b736947d166",
     "https://freaternidad.github.io/web-page/manifest.webmanifest": "195e8dcccfa66fc1eb415ded0a89de1a2cbf7b48",
     "https://freaternidad.github.io/web-page/omega-back.efec16399543427d.png": "a3c43544c1b02816e18a20503358943d7e89cf7c",
     "https://freaternidad.github.io/web-page/omega.f51357f83cc5688b.png": "ace2a26e97e122d63d2f5a5aaaeb2000261521ea",
