@@ -84,6 +84,10 @@
         "welcome": {
             "package": "Tula con diseño y color personalizado",
             "card": "Tarjeta de Membresía"
+        },
+        "book": {
+            "one": "Un año en páginas",
+            "description": "Vivir la Experiencia Fraternidad es poder recordar siempre los mejores momentos vividos durante el último año de colegio.<br><br>A los miembros les diseñarémos un <strong>Anuario Escolar Digital</strong> en el que estarán todas las fotos y eventos memorales, así como las palabras de cada estudiante, reconocimientos a los más destacados y un par de anécdotas."
         }
     },
     "partners": {
