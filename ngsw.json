@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1695495541031,
+  "timestamp": 1695495633750,
   "index": "https://freaternidad.github.io/web-page/index.html",
   "assetGroups": [
     {
@@ -213,7 +213,7 @@
     "https://freaternidad.github.io/web-page/assets/fonts/Besley-Italic-VariableFont_wght.ttf": "607bd85d59a4da8b2b23fe1fa30f2cdb9ab71885",
     "https://freaternidad.github.io/web-page/assets/fonts/Besley-VariableFont_wght.ttf": "8545bb668a8b08b3d96f1e205ada07aedbb5f68c",
     "https://freaternidad.github.io/web-page/assets/fonts/WorldDiscovery_PERSONAL_USE_ONLY.ttf": "e6a77af480dfbbbbf3cc4e6338dc8bb2cb1a14e4",
-    "https://freaternidad.github.io/web-page/assets/i18n/es.json": "4f72644cfaa0d6329fbedf036bdd907f3b655fa0",
+    "https://freaternidad.github.io/web-page/assets/i18n/es.json": "a36398aff80960fa6c2045294b6d5a335940eda1",
     "https://freaternidad.github.io/web-page/assets/icons/1.svg": "206069cf39f361886fee4a18941b94605b647942",
     "https://freaternidad.github.io/web-page/assets/icons/arrow-down.svg": "52e18753cacb118ccfe0d50d64fc5ad8cf053608",
     "https://freaternidad.github.io/web-page/assets/icons/arrow.svg": "87f4efa6674aa09adb78b4aa8c74b14adb47216f",
