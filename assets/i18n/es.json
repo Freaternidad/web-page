@@ -4,20 +4,20 @@
     "email": "experienciafraternidad@gmail.com",
     "phone": "+573188251017",
     "footer": {
-        "text": "Unirse a esta experiencia  sin duda le proporcionará momentos gratificantes, recuerdos entrañables y una red de personas notables que se convertirán en sus aliados para toda la vida. Creemos que usted posee las cualidades y el potencial para prosperar dentro de nuestra Fraternidad, y queremos extenderle esta invitación..."
+        "text": "Unirse a esta experiencia  sin duda te proporcionará momentos gratificantes, recuerdos entrañables y una red de personas notables que se convertirán en sus aliados para toda la vida. Creemos que posees las cualidades y el potencial para prosperar dentro de nuestra Fraternidad, y queremos extenderte esta invitación..."
     },
     "home": {
-        "info": "Vivir la Experiencia Fraternidad es ser parte de una comunidad que <strong><em>fomenta habilidades de liderazgo</em></strong> y proporciona a sus miembros amplias oportunidades de crecimiento y para tener un impacto positivo en la sociedad.",
-        "info2": "A través de nuestros diversos convenios con aliados, de los esfuerzos filantrópicos, programas de tutorías e iniciativas de servicio a la comunidad, nuestro objetivo es <strong><em>cultivar un fuerte sentido de pertenencia</em></strong> de nuestros miembros con sus proyectos de vida y sus roles como líderes en la sociedad, y al mismo tiempo brindar un sinnúmero de beneficios como descuentos y acompañamientos especializados en procesos académicos.",
-        "info3": "Reconocemos la importancia de  <strong><em>mantener un equilibrio entre las actividades académicas y aquellas que son extra-curriculares.</strong></em> Como miembro, tendrás acceso a una red de personas motivadas que pueden proporcionarte apoyo académico, compartir recursos de estudio y fomentar tu crecimiento intelectual y personal.",
+        "info": "Vivir la Experiencia Fraternidad es ser parte de una comunidad que <strong><em>fomenta habilidades de liderazgo</em></strong> y proporciona a sus miembros amplias oportunidades de crecimiento y para tener un impacto positivo en la sociedad",
+        "info2": "A través de nuestros diversos convenios con aliados, de los esfuerzos filantrópicos, programas de tutorías e iniciativas de servicio a la comunidad, nuestro objetivo es <strong><em>cultivar un fuerte sentido de pertenencia</em></strong> de nuestros miembros con sus proyectos de vida y sus roles como líderes en la sociedad, y al mismo tiempo brindar un sinnúmero de beneficios como descuentos y acompañamientos especializados en procesos académicos",
+        "info3": "Reconocemos la importancia de  <strong><em>mantener un equilibrio entre las actividades académicas y aquellas que son extracurriculares.</strong></em> Como miembro, tendrás acceso a una red de personas motivadas que pueden proporcionarte apoyo académico, compartir recursos de estudio y fomentar tu crecimiento intelectual y personal",
         "partners": {
             "title": "Aliados",
-            "info": "Ser miembro de una Fraternidad es poder <strong><em>disfrutar de beneficios como descuentos, atención preferencial y acceso a productos y servicios exclusivos.</em></strong><br/><br/>Aprovecha todos nuestros convenios y pregunta sobre todos los beneficios de vivir la <strong><em>Experiencia Fraternidad.</em></strong><br/>",
-            "button": "!Descubrelos¡"
+            "info": "Ser miembro de una Fraternidad es poder <strong><em>disfrutar de beneficios como descuentos, atención preferencial y acceso a productos y servicios exclusivos.</em></strong><br/><br/>Aprovecha todos nuestros convenios y pregunta sobre todos los beneficios de vivir la <strong><em>Experiencia Fraternidad</em></strong><br/>",
+            "button": "¡Descúbrelos!"
         },
         "membership": {
             "title": "Tarjeta de Membresía",
-            "text": "Vivir esta Experiencia es <strong><em>sentirse identificado y parte de un club lleno de beneficios.</em></strong><br/><br/>Cada miembro de nuestra Fraternidad tiene una tarjeta que le permite acceder a toda nuestra red de aliados y convenios exclusivos para clientes.<br/>Las tarjetas son personalizadas de acuerdo a la Experiencia, y todas tienen el nombre y código del beneficiario, para fácil acceso a todos nuestros servicios."
+            "text": "Vivir esta Experiencia es <strong><em>sentirse identificado y parte de un club lleno de beneficios.</em></strong><br/><br/>Cada miembro de nuestra Fraternidad tiene una tarjeta que le permite acceder a toda nuestra red de aliados y convenios exclusivos para clientes.<br/>Las tarjetas son personalizadas de acuerdo a la Experiencia, y todas tienen el nombre y código del beneficiario, para fácil acceso a todos nuestros servicios"
         },
         "customers": {
             "title": "...Ellos ya lo vivieron.",
@@ -46,31 +46,31 @@
     },
     "memberships": {
         "alpha": {
-            "mainPhrase": "¡La experiencia más completa <br/><span> de Nuestras Membresias!</span>",
+            "mainPhrase": "¡La experiencia más completa <br/><span> de Nuestras Membresías!</span>",
             "title": "Experiencia Alpha",
-            "description": "Es la experiencia más completa de nuestras membresias; el kit VIP de bienvenida <strong>incluye dos chaquetas (o una doble faz), en la que podrán elegir hasta cinco colores de tela diferentes; bordados, estampados y parches ilimitados; y un artículo personalizado del catálogo que esté disponible al momento de la bienvenida.</strong><br><br>Los estudiantes que eligen esta experiencia, la entrega del kit de bienvenida es un evento VIP, en el que se incluye una sesión fotográfica profesional y una base de fotografía 360° para que las fotos y videos sean inolvidables.",
+            "description": "Es la experiencia más completa de nuestras membresias; el kit VIP de bienvenida <strong>incluye dos chaquetas (o una doble faz), en la que podrán elegir hasta cinco colores de tela diferentes; bordados, estampados y parches ilimitados; y un artículo personalizado del catálogo que esté disponible al momento de la bienvenida.</strong><br><br>Los estudiantes que eligen esta experiencia, la entrega del kit de bienvenida es un evento VIP, en el que se incluye una sesión fotográfica profesional y una base de fotografía 360° para que las fotos y videos sean inolvidables",
             "welcome": {
-                "title": "Con el kit de bienvenida,<br/> <strong>Alpha Vip</strong> recibirás <i>2</i><br> articulos personalizados",
-                "article": "Articulo extra de nuestra tienda de personalizados"
+                "title": "Con el kit de bienvenida,<br/> <strong>Alpha Vip</strong> recibirás <i>2</i><br> artículos personalizados",
+                "article": "Artículo extra de nuestra tienda de personalizados"
             },
             "card": "Los miembros que vivan esta experiencia tienen derecho a la tarjeta Alpha VIP, con la que tendrán acceso a todas las ofertas de las marcas aliadas del portafolio"
         },
         "omega": {
-            "mainPhrase": "¡La experiencia más popular <br/><span> de Nuestras Membresias!</span>",
+            "mainPhrase": "¡La experiencia más popular <br/><span> de Nuestras Membresías!</span>",
             "title": "Experiencia Omega",
             "description": "La experiencia Omega PREMIUM es la segunda experiencia en lista; el kit VIP de bienvenida <strong>incluye una chaqueta doble faz, en la que podrán elegir hasta cinco colores de tela diferentes; bordados, estampados y parches ilimitados; y un artículo personalizado del catálogo que esté disponible al momento de la bienvenida</strong><br><br>Los estudiantes que eligen esta experiencia, la entrega del kit de bienvenida es un evento Omega, en el que se incluye una sesión fotográfica profesional",
             "welcome": {
-                "title": "Con el kit de bienvenida,<br/> <strong>Omega Premium</strong> recibirás <i>2</i><br> articulos personalizados",
-                "article": "Articulo extra de nuestra tienda de personalizados"
+                "title": "Con el kit de bienvenida,<br/> <strong>Omega Premium</strong> recibirás <i>2</i><br> artículos personalizados",
+                "article": "Artículo extra de nuestra tienda de personalizados"
             },
             "card": "Los miembros que vivan esta experiencia tienen derecho a la tarjeta Omega Premium, con la que tendrán acceso a la mayoría de las ofertas de las marcas aliadas del portafolio"
         },
         "beta": {
-            "mainPhrase": "¡La experiencia inicial <br/><span> de Nuestras Membresias!</span>",
+            "mainPhrase": "¡La experiencia inicial <br/><span> de Nuestras Membresías!</span>",
             "title": "Experiencia Beta",
             "description": "La experiencia Beta STARTER es la tercera experiencia en lista; el kit VIP de bienvenida <strong>incluye una chaqueta sencilla, en la que podrán elegir hasta cinco colores de tela diferentes; bordados, estampados y parches ilimitados</strong>",
             "welcome": {
-                "title": "Con el kit de bienvenida,<br/> <strong>Beta Starter</strong> recibirás <i>1</i><br> articulo personalizado",
+                "title": "Con el kit de bienvenida,<br/> <strong>Beta Starter</strong> recibirás <i>1</i><br> artículo personalizado",
                 "article": ""
             },
             "card": "Los miembros que vivan esta experiencia tienen derecho a la tarjeta Beta Premium, con la que tendrán acceso a algunas de las ofertas de las marcas aliadas del portafolio"
@@ -87,7 +87,7 @@
         },
         "book": {
             "one": "Un año en páginas",
-            "description": "Vivir la Experiencia Fraternidad es poder recordar siempre los mejores momentos vividos durante el último año de colegio.<br><br>A los miembros les diseñarémos un <strong>Anuario Escolar Digital</strong> en el que estarán todas las fotos y eventos memorales, así como las palabras de cada estudiante, reconocimientos a los más destacados y un par de anécdotas."
+            "description": "Vivir la Experiencia Fraternidad es poder recordar siempre los mejores momentos vividos durante el último año de colegio.<br><br>A los miembros les diseñarémos un <strong>Anuario Escolar Digital</strong> en el que estarán todas las fotos y eventos memorables, así como las palabras de cada estudiante, reconocimientos a los más destacados y un par de anécdotas."
         }
     },
     "partners": {
